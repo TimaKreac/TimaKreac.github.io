@@ -1,0 +1,23 @@
+.section-3 {
+    background: #4556C1;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    font-family: 'Panton SemiBold';
+}
+
+.health-img {
+    margin-top: 50px;
+}
+
+.green {
+    color: #40FF13;
+}
+
+.green:last-child {
+    cursor: pointer;
+}
+
+.red {
+    color: #f90303;
+}
