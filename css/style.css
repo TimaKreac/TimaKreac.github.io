@@ -27,6 +27,12 @@ body {
     position: relative;
     overflow: hidden;
     transition: all 0.8s ease;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+
 }
 
 p {
@@ -45,6 +51,12 @@ li {
 .container {
     max-width: 1450px;
     margin: 0 auto;
+}
+
+.disable-hover,
+.disable-hover * {
+    pointer-events: none !important;
+    animation: none !important;
 }
 
 @media only screen and (min-width: 1700px) {

@@ -10,6 +10,14 @@
     margin-top: 50px;
 }
 
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-item {}
+
 .green {
     color: #40FF13;
 }

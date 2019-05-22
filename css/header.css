@@ -138,7 +138,11 @@ header {
     transform-origin: bottom bottom;
 }
 
+
+
+
 .header-num {
+
     position: absolute;
     bottom: 30px;
     opacity: 0.3;
@@ -155,15 +159,15 @@ header {
 }
 
 .header-num span:nth-child(2) {
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
 }
 
 .header-num span:nth-child(3) {
-    transition-delay: 1s;
+    transition-delay: 0.4s;
 }
 
 .header-num span:nth-child(4) {
-    transition-delay: 1.5s;
+    transition-delay: 0.6s;
 }
 
 .scroll-down img:nth-child(1) {
@@ -200,49 +204,4 @@ header {
     100% {
         opacity: 1;
     }
-}
-
-.nav-left-item {
-    right: 60px;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #DEDEDE;
-    opacity: 0;
-    transition: all 1s linear;
-}
-
-.nav-left-item.active {
-    background-color: #414141;
-}
-
-.nav-left-item:nth-child(1) {
-    top: 40%;
-    left: 10px;
-    cursor: pointer;
-}
-
-.nav-left-item:nth-child(2) {
-    top: 45%;
-    left: 40px;
-    cursor: pointer;
-}
-
-.nav-left-item:nth-child(3) {
-    top: 50%;
-    left: 50px;
-    cursor: pointer;
-}
-
-.nav-left-item:nth-child(4) {
-    top: 55%;
-    left: 40px;
-    cursor: pointer;
-}
-
-.nav-left-item:nth-child(5) {
-    top: 60%;
-    left: 10px;
-    cursor: pointer;
 }
