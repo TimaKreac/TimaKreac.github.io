@@ -14,6 +14,7 @@ body
     transition: all 0.5s ease
 .container
     max-width: 1366px
+    padding: 0px 15px;
     margin: 0 auto
     position: relative
 a
@@ -28,7 +29,7 @@ ul,li
 
 /*************** header  ******************/
 
-.header 
+.header
     width: 100%
     padding-top: 50px
     padding-bottom: 130px
@@ -36,6 +37,9 @@ ul,li
     background-position: center center
     background-repeat: no-repeat
     background-size: cover
+    &-logo
+        opacity: 0
+        animation: bounceInDown 2s ease forwards
     &-head
         display: flex
         align-items: center
@@ -46,6 +50,11 @@ ul,li
         align-items: center
     &-menu_link
         margin-left: 40px
+        transition: all 0.5s ease
+        opacity: 0
+        animation: bounceInDown 2s ease forwards
+        &:hover
+            color: #efb115
         &.active
             color: #efb115
     &-title
@@ -53,12 +62,17 @@ ul,li
         font-size: 80px
         margin-bottom: 25px
         max-width: 755px
+        opacity: 0
+        animation: bounceInLeft 1s ease forwards
     &-subtitle
         font-weight: 500
         font-size: 25px
         max-width: 360px
         line-height: 35px
         margin-bottom: 70px
+        opacity: 0
+        animation: bounceInLeft 1s ease forwards
+        animation-delay: 0.2s
     &-buttons
         display: flex
         align-items: center
@@ -72,6 +86,10 @@ ul,li
         margin-right: 100px
         font-size: 25px
         font-family: $semiBold
+        opacity: 0
+        animation: bounceInLeft 1s ease forwards
+        animation-delay: 0.4s
+        
         &:after
             content: ''
             background-image: url(../img/Arrow.svg)
@@ -85,6 +103,8 @@ ul,li
             display: block
         &:hover
             background-color: lighten(#ffc944,5%)
+        &:hover:after
+            animation: fadeInLeft 1s linear infinite
         &:active
             background-color: darken(#ffc944,5%)
     &-map-text
@@ -93,16 +113,24 @@ ul,li
         margin-right: 10px
         font-size: 16px
         line-height: 22px
+        opacity: 0
+        animation: bounceInRight 1s ease forwards
+        animation-delay: 0.4s
     &-mark-map
         width: 74px
         height: 74px
-        display: block
         position: relative
         background-color: #3f3d56
         border-radius: 50%
+        cursor: pointer
+        opacity: 0
+        animation: bounceInRight 1s ease forwards
+        animation-delay: 0.4s
+        &:hover:before
+            animation: bounce 1s ease 
         &:before
             content: ' '
-            display: block
+            display: inline-block
             position: absolute
             width: 29px
             height: 36px
@@ -111,7 +139,7 @@ ul,li
             transform: translate(-50%,-50%)
             background-image: url(../img/map-mark.svg)
             background-repeat: no-repeat
-            cursor: pointer
+            
 
 /************ Advantages *********/
 
@@ -152,9 +180,10 @@ ul,li
     &-cards
         display: flex
         flex-flow: row wrap
-        margin: 90px auto 0 auto
+        justify-content: space-around
+        margin-top: 90px
     &-card
-        margin: 0 auto 70px auto
+        margin: 0 0 60px 0
         &.card-dn
             display: none
         &_img
@@ -203,7 +232,6 @@ ul,li
         left: 50%
         transform: translateX(-50%)
         background-color: transparent
-        margin-bottom: 130px
         &:hover
             background-color: #FFC944
             color: #fff
@@ -212,11 +240,12 @@ ul,li
 /*********************** mob app *************************/
 
 .mobapp
+    margin-top: 130px
     min-height: 570px
     width: 100%
     background-color: #F2F2F2
     position: relative
-    margin-bottom: 120px
+    
     &-inner
         display: flex
     &-text
@@ -246,6 +275,7 @@ ul,li
 
 .reviews
     &-leftBtn
+        cursor: pointer
         width: 70px
         height: 70px
         background-color: #4B4960
@@ -256,7 +286,7 @@ ul,li
         transform: translateY(-50%)
         &:before
             content: ""
-            width: 40px
+            width: 32px
             height: 20px
             display: block
             position: absolute
@@ -268,6 +298,7 @@ ul,li
             background-position: center center
             background-size: cover
     &-rightBtn
+        cursor: pointer
         width: 70px
         height: 70px
         background-color: #4B4960
@@ -278,7 +309,7 @@ ul,li
         transform: translateY(-50%)
         &:before
             content: ""
-            width: 40px
+            width: 32px
             height: 20px
             display: block
             position: absolute
@@ -290,12 +321,14 @@ ul,li
             background-position: center center
             background-size: cover
     &-title
+        padding-top: 120px
         margin-bottom: 90px
         text-align: center
         font-size: 60px
-        line-height: 22px
+        line-height: 40px
         font-family: $Bold
     &-review
+        width: 100%
         margin: 0 auto
         position: relative
         background-color: #FEFEFE
@@ -316,6 +349,10 @@ ul,li
             text-align: left
             max-width: 670px
             font-weight: 400
+        &_img
+            width: 70px
+            height: 70px
+            border-radius: 50%
         &_under
             display: flex
             align-items: center
@@ -335,7 +372,7 @@ ul,li
 /***************************** footer **************************/
 
 .footer
-    min-height: 590px
+    min-height: 550px
     background-color: #3F3D56
     &-inner
         display: flex
@@ -344,15 +381,19 @@ ul,li
         margin-bottom: 4px
     &-menu
         color: #ffffff
+        display: flex
+        margin-bottom: 40px
     &-link
         color: rgba(#ffffff,0.5)
         font-size: 16px
         font-weight: 600
         margin-top: 20px
         display: block
-        width: 150px
+        margin-right: 40px
         &:hover
             color: rgba(#ffffff,1)
+        &.active
+            color: #efb115
     &-where
         font-size: 35px
         font-weight: 600
@@ -431,6 +472,64 @@ ul,li
         margin: 0 auto
         text-align: center
         font-size: 12px
+        padding: 10px 0
         &_link
             color: rgba(#ffffff,0.7)
-            font-size: 12px
+            font-size: 12px 
+
+
+/**** modal ********/
+.overlay
+	width: 100%
+	min-height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	padding: 40px
+	position: fixed
+	top: 0
+	left: 0
+	background: rgba(#323232, 0.6)
+	opacity: 0
+	pointer-events: none
+	transition: 0.35s ease-in-out
+	max-height: 100vh
+	overflow-y: auto
+	&.open
+		opacity: 1
+		pointer-events: inherit
+	.modal
+		background: #3F3D56
+		text-align: center
+		padding: 40px 80px
+		opacity: 0
+		pointer-events: none
+		transition: 0.35s ease-in-out
+		max-height: 100vh
+		overflow-y: auto
+		&.open
+			opacity: 1
+			pointer-events: inherit
+			.content
+				transform: translate(0,-0px)
+				opacity: 1
+		.content
+			transform: translate(0, -10px)
+			opacity: 0
+			transition: .35s ease-in-out
+		
+.overlay .modal .title
+    margin-top: 30px
+    margin-bottom: 0
+    font-size: 40px
+    color: #ffffff
+    font-family: $semiBold
+.modal .footer-form_name
+    margin-top: 30px
+#modal1
+    border-radius: 50px
+    border: 0
+    padding-top: 0
+
+@import 'animate'

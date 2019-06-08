@@ -8,20 +8,23 @@
     <title>DeliveryMarket</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-inner">
                 <div class="header-head">
-                    <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+                    <a href="#" class="header-logo"><img src="img/logo.svg" alt="logo"></a>
                     <nav>
                         <ul class="header-menu">
-                            <li><a href="#" class="header-menu_link">О сервисе</a></li>
-                            <li><a href="#" class="header-menu_link">Супермаркеты</a></li>
+                            <li><a href="#header" class="header-menu_link go_to">О сервисе</a></li>
+                            <li><a href="#markets" class="header-menu_link go_to">Супермаркеты</a></li>
+                            <li><a href="#mobapp" class="header-menu_link go_to">Приложение</a></li>
+                            <li><a href="#reviews" class="header-menu_link go_to">Отзывы</a></li>
                             <li><a href="#" class="header-menu_link active">Войти в кабинет</a></li>
                         </ul>
                     </nav>
@@ -31,9 +34,9 @@
                     <h3 class="header-subtitle">Первая доставка покупок в подарок до 1 июля</h3>
                 </div>
                 <div class="header-buttons">
-                    <a href="#" class="header-btn">Попробовать</a>
+                    <a href="#" class="header-btn btn open-modal" data-modal="#modal1">Попробовать</a>
                     <span class="header-map-text">Отследите свой заказ<br>на онлайн карте</span>
-                    <div class="header-mark-map"></div>
+                    <div class="header-mark-map "></div>
                 </div>
             </div>
         </div>
@@ -42,13 +45,13 @@
         <div class="container">
             <div class="advantages-inner">
                 <div class="advantages-item">
-                    <div class="advantages-num">45</div>
+                    <div class="advantages-num" data-num="45">45</div>
                     <div class="advantages-value">минут</div>
                     <div class="advantages-text">среднее время
                         доставки</div>
                 </div>
                 <div class="advantages-item">
-                    <div class="advantages-num">27</div>
+                    <div class="advantages-num" data-num="27">27</div>
                     <div class="advantages-value">магазинов</div>
                     <div class="advantages-text">магазинов по всему городу</div>
                 </div>
@@ -59,12 +62,12 @@
                         заказ</div>
                 </div>
                 <div class="advantages-item">
-                    <div class="advantages-num">726</div>
-                    <div class="advantages-value">минут</div>
-                    <div class="advantages-text">отзывов довольных клиентов</div>
+                    <div class="advantages-num" data-num="100">0</div>
+                    <div class="advantages-value">довольных</div>
+                    <div class="advantages-text">отзывов наших клиентов</div>
                 </div>
                 <div class="advantages-item">
-                    <div class="advantages-num">100</div>
+                    <div class="advantages-num" data-num="30">0</div>
                     <div class="advantages-value">заказов</div>
                     <div class="advantages-text">в день от наших
                         покупателей</div>
@@ -73,7 +76,7 @@
         </div>
     </section>
 
-    <section class="markets">
+    <section class="markets" id="markets">
         <div class="container">
             <div class="markets-inner">
                 <div class="markets-header">Выберите любимый супермаркет</div>
@@ -256,7 +259,7 @@
         <div class="container">
             <div class="mobapp-inner">
                 <div>
-                    <img src="img/mob.png" alt="mobile" class="mobapp-img">
+                    <img src="img/mob.png" alt="mobile" class="mobapp-img" id="mobapp">
                 </div>
                 <div class="mobapp-text">
                     <h3 class="mobapp-title">Мобильное приложение DeliveryMarket</h3>
@@ -271,43 +274,82 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
-
             <div class="reviews-title">Отзывы наших покупателей</div>
             <div class="reviews-review">
-                <a href="javascript://0" class="reviews-leftBtn"></a>
-                <a href="javascript://0" class="reviews-rightBtn"></a>
-                <div class="reviews-review_title">В 4-ый раз остаюсь довольным</div>
-                <div class="reviews-review_text">Доставляют всегда во время, нареканий нет, товары
-                    в прекрасном качестве, среди многих аналогичных сервисов предпочтение отдаю только Деливери-маркет,
-                    остальные разочаровали по многим пунктам.</div>
-                <div class="reviews-review_under">
-                    <img src="img/Ellipse.jpg" alt="" class="reviews-review_img">
-                    <div class="reviews-review_author">
-                        <div class="reviews-review_name">Tima Kreac</div>
-                        <a href="https://vk.com/timakreac" target="_blank" class="reviews-review_social">Вконтакте
-                        </a>
+                <!-- <a href="javascript://0" class="reviews-leftBtn "></a>
+                <a href="javascript://0" class="reviews-rightBtn "></a> -->
+                <div class="reviews-item">
+                    <div class="reviews-review_title">В 3-ый раз остаюсь довольным</div>
+                    <div class="reviews-review_text">Доставляют всегда во время, нареканий нет, товары
+                        в прекрасном качестве, среди многих аналогичных сервисов предпочтение отдаю только
+                        Деливери-маркет,
+                        остальные разочаровали по многим пунктам.</div>
+                    <div class="reviews-review_under">
+                        <img src="img/review-img1.jpg" alt="img" class="reviews-review_img">
+                        <div class="reviews-review_author">
+                            <div class="reviews-review_name">Tima Kreac</div>
+                            <a href="https://vk.com/timakreac" target="_blank" class="reviews-review_social">Вконтакте
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="reviews-item">
+                    <div class="reviews-review_title">В 5-ый раз остаюсь довольным</div>
+                    <div class="reviews-review_text">Доставляют всегда во время, нареканий нет, товары
+                        в прекрасном качестве, среди многих аналогичных сервисов предпочтение отдаю только
+                        Деливери-маркет,
+                        остальные разочаровали по многим пунктам.</div>
+                    <div class="reviews-review_under">
+                        <img src="img/review-img2.jpg" alt="img" class="reviews-review_img">
+                        <div class="reviews-review_author">
+                            <div class="reviews-review_name">Джон Браун</div>
+                            <a href="https://vk.com/timakreac" target="_blank" class="reviews-review_social">Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-item">
+                    <div class="reviews-review_title">В 4-ый раз остаюсь довольным</div>
+                    <div class="reviews-review_text">Доставляют всегда во время, нареканий нет, товары
+                        в прекрасном качестве, среди многих аналогичных сервисов предпочтение отдаю только
+                        Деливери-маркет,
+                        остальные разочаровали по многим пунктам.</div>
+                    <div class="reviews-review_under">
+                        <img src="img/review-img3.jpg" alt="img" class="reviews-review_img">
+                        <div class="reviews-review_author">
+                            <div class="reviews-review_name">Алексей Перепелинов</div>
+                            <a href="https://vk.com/timakreac" target="_blank" class="reviews-review_social">Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-left">
                     <a href="#" class="footer-logo"><img src="img/footer-logo.svg" alt="logo"></a>
                     <ul>
                         <li class="footer-menu">
-                            <a href="#" class="footer-link">О сервисе</a>
-                            <a href="#" class="footer-link">Супермаркеты</a>
-                            <a href="#" class="footer-link">Войти в кабинет</a>
+                            <a href="#header" class="footer-link go_to">О сервисе</a>
+                            <a href="#markets" class="footer-link go_to">Супермаркеты</a>
+                            <a href="#mobapp" class="footer-link go_to">Приложение</a>
+                            <a href="#reviews" class="footer-link go_to">Отзывы</a>
+                            <a href="#" class="footer-link active">Войти в кабинет</a>
                         </li>
                     </ul>
                     <h6 class="footer-where">Где мы находимся?</h6>
-                    <iframe src="https://snazzymaps.com/embed/158719" width="750px" height="310px"></iframe>
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A807db7354c359b85a004023eef5222bb4ab42f6b8c070ca616c7d77fd8ea86ef&amp;width=750&amp;height=310&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
                     <p class="footer-developer">Сайт разработан: <a class="footer-developer_link"
                             href="https://vk.com/timakreac" target="_blank"> timakreac</a></p>
                 </div>
@@ -320,7 +362,21 @@
             </div>
         </div>
     </footer>
+
+
+    <!----------------- modal -------------->
+    <form class="footer-form modal" action="#" id='modal1'>
+        <div class="title">Заполните форму</div>
+        <input class="footer-form_name" type="text" placeholder="Как Вас зовут?" required>
+        <input class="footer-form_address" type="text" placeholder="Ваш адрес?" required>
+        <input class="footer-form_number" type="text" placeholder="Номер телефона" required>
+        <input type="submit" class="footer-btn" value="Отправить заявку">
+    </form>
+
+
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
