@@ -85,11 +85,11 @@ button {
   margin-bottom: 50px;
 }
 
-.header-navbar {
-  padding: 0px 24px;
+.header-nav {
+  padding: 24px 0;
 }
 
-.header-navbar_logo {
+.header-nav_logo {
   font-family: "CirceRounded-ExtraBold";
   color: #fff;
   font-size: 36px;
@@ -101,14 +101,14 @@ button {
           align-items: center;
 }
 
-.header-navbar_logo__text {
+.header-nav_logo__text {
   padding-left: 70px;
   margin-left: 10px;
   white-space: nowrap;
   position: relative;
 }
 
-.header-navbar_logo__text:before {
+.header-nav_logo__text:before {
   content: ' ';
   display: block;
   width: 56px;
@@ -122,7 +122,7 @@ button {
   left: 0;
 }
 
-.header-navbar_contacts {
+.header-nav_contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,20 +132,20 @@ button {
           flex-direction: column;
 }
 
-.header-navbar_phone {
+.header-nav_phone {
   font-family: "CirceRounded-ExtraBold";
   margin-bottom: 10px;
   font-size: 26px;
   text-align: right;
 }
 
-.header-navbar_email {
+.header-nav_email {
   font-size: 18px;
   font-family: "CirceRounded-Light";
   text-align: right;
 }
 
-.header-navbar_btn {
+.header-nav_btn {
   display: inline-block;
   padding: 22px 42px;
   text-transform: uppercase;
@@ -158,7 +158,7 @@ button {
   transition: 0.5s;
 }
 
-.header-navbar_btn:hover {
+.header-nav_btn:hover {
   text-decoration: underline;
 }
 
@@ -242,12 +242,12 @@ button {
   background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%);
 }
 
-/****************** bashes ******************/
-.bashes {
+/****************** bushes ******************/
+.bushes {
   padding-bottom: 40px;
 }
 
-.bashes-title {
+.bushes-title {
   text-align: center;
   color: #212121;
   font-family: "CirceRounded-ExtraBold";
@@ -257,7 +257,7 @@ button {
   margin-bottom: 44px;
 }
 
-.bashes-title:after {
+.bushes-title:after {
   content: ' ';
   display: block;
   width: 70px;
@@ -272,13 +272,13 @@ button {
   background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%);
 }
 
-.bashes-cards {
+.bushes-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.bashes-card {
+.bushes-card {
   -webkit-box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15);
           box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15);
   border-radius: 10px;
@@ -287,7 +287,7 @@ button {
   margin: 0 auto 30px auto;
 }
 
-.bashes-card_title {
+.bushes-card_title {
   color: #212121;
   font-size: 22px;
   font-family: "CirceRounded-ExtraBold";
@@ -306,14 +306,14 @@ button {
   min-height: 50px;
 }
 
-.bashes-card_image {
+.bushes-card_image {
   border-radius: 10px;
   display: block;
   max-width: 100%;
   margin: 15px auto 0 auto;
 }
 
-.bashes-card_btn {
+.bushes-card_btn {
   display: inline-block;
   position: relative;
   left: 50%;
@@ -335,7 +335,7 @@ button {
   background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%);
 }
 
-.bashes-card_btn:hover {
+.bushes-card_btn:hover {
   background-color: #9bda24;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #8bc420), to(#75a915));
   background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%);
