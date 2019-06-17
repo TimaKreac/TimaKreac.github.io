@@ -1,0 +1,800 @@
+@import fonts
+@import vars
+
+body
+    color: #fff
+a
+    text-decoration: none
+    color: #fff
+button
+    border: 0
+
+/****************** header ******************/
+.header
+    background: #30403a url(../img/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding-bottom: 146px
+    margin-bottom: 50px
+    &-navbar
+        padding: 0px 24px
+        &_logo
+            font-family: $extraBold
+            color: #fff
+            font-size: 36px
+            display: flex
+            align-items: center
+            &__text
+                padding-left: 70px
+                margin-left: 10px
+                white-space: nowrap
+                position: relative
+                &:before
+                    content: ' '
+                    display: block
+                    width: 56px
+                    height: 50px
+                    background: url(../img/logo.png)
+                    background-repeat: no-repeat
+                    background-position: center center
+                    background-size: contain
+                    position: absolute
+                    top: -5px
+                    left: 0
+        &_contacts
+            display: flex
+            flex-direction: column
+        &_phone
+            font-family: $extraBold
+            margin-bottom: 10px
+            font-size: 26px
+            text-align: right
+        &_email
+            font-size: 18px
+            font-family: $light
+            text-align: right
+        &_btn
+            display: inline-block
+            padding: 22px 42px
+            text-transform: uppercase
+            font-family: $extraBold
+            font-size: 16px
+            border: 2px solid #8bc420
+            border-radius: 32px
+            text-align: center
+            transition: 0.5s
+            &:hover
+                text-decoration: underline
+    &-main
+        border-top: 1px solid rgba(#fff,0.3)
+        &_title
+            padding-top: 72px
+            font-family: $extraBold
+            font-size: 56px
+            text-align: center 
+            margin-bottom: 30px 
+        &_subtitle
+            font-family: $thin
+            font-size: 30px;
+            text-align: center 
+            margin-bottom: 45px 
+        &_features
+            flex-wrap: wrap
+            margin: 0 auto
+        &_feature
+            min-width: 318px
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            text-align: center
+            margin-bottom: 42px
+            &__icon
+                width: 78px
+                height: 78px
+                margin: 0 auto
+                margin-bottom: 23px
+            &__title
+                font-family: $extraBold
+                font-size: 30px
+                margin-bottom: 13px
+                white-space: nowrap
+            &__text
+                line-height: 24px
+                font-size: 18px
+                font-family: $light
+        &_btn
+            font-family: $extraBold
+            font-size: 16px
+            text-transform: uppercase
+            padding: 28px 68px
+            background-color: #8bc420
+            border-radius: 38px
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2)
+            transition: 0.5s
+            &:hover
+                background-color: lighten(#8bc420,5%)
+                background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%)
+/****************** bashes ******************/
+.bashes
+    padding-bottom: 40px
+    &-title
+        text-align: center
+        color: #212121
+        font-family: $extraBold
+        font-size: 46px
+        padding-bottom: 16px
+        position: relative
+        margin-bottom: 44px
+        &:after
+            content: ' '
+            display: block
+            width: 70px
+            height: 2px
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            background-color: #f6f6f6
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+    &-cards
+        display: flex
+    &-card
+        box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
+        border-radius: 10px
+        padding: 20px 0 30px 0
+        position: relative
+        margin: 0 auto 30px auto
+        &_title
+            color: #212121
+            font-size: 22px
+            font-family: $extraBold
+            line-height: 26px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            min-height: 50px
+        &_image
+            border-radius: 10px
+            display: block
+            max-width: 100%
+            margin: 15px auto 0 auto
+        &_btn
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%, 0)
+            white-space: nowrap
+            text-align: center
+            max-width: 100% 
+            margin-top: 22px
+            text-transform: uppercase
+            font-family: $extraBold
+            font-size: 14px
+            padding: 22px 30px
+            border-radius: 28px
+            box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2)
+            background-color: #8bc420
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            &:hover
+                background-color: lighten(#8bc420,5%)
+                background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%)
+
+/****************** trees ******************/
+.trees
+    padding-top: 70px
+    padding-bottom: 70px
+    background-color: #f5f5f5
+    &-title
+        text-align: center
+        color: #212121
+        font-family: $extraBold
+        font-size: 46px
+        padding-bottom: 16px
+        position: relative
+        margin-bottom: 44px
+        &:after
+            content: ' '
+            display: block
+            width: 70px
+            height: 2px
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            background-color: #f6f6f6
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+    &-cards
+        display: flex
+    &-card
+        box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
+        border-radius: 10px
+        padding: 20px 0 30px 0
+        position: relative
+        margin: 0 auto 30px auto
+        &_title
+            color: #212121
+            font-size: 22px
+            font-family: $extraBold
+            line-height: 26px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            min-height: 50px
+        &_image
+            border-radius: 10px
+            display: block
+            max-width: 100%
+            margin: 15px auto 0 auto
+        &_btn
+            display: inline-block
+            position: relative
+            left: 50%
+            transform: translate(-50%, 0)
+            white-space: nowrap
+            text-align: center
+            max-width: 100% 
+            margin-top: 22px
+            text-transform: uppercase
+            font-family: $extraBold
+            font-size: 14px
+            padding: 22px 30px
+            border-radius: 28px
+            box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2)
+            background-color: #8bc420
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            &:hover
+                background-color: lighten(#8bc420,5%)
+                background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%)
+    &-sale
+        background: #565c66 url(../img/trees/tree-sale.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        padding: 20px
+        border: 1px solid black
+        max-height: 422px
+        max-width: 100%
+        &_border
+            padding: 85px 0 90px 0
+            margin: 0 auto
+            border: 5px solid rgba(#fff,.2)
+        &_text
+            font-family: $extraBold
+            font-size: 32px
+            line-height: 36px
+            text-align: center
+            max-width: 500px
+            margin: 0 auto
+            &__sale
+                color: #ffb125
+        &_title
+            font-size: 66px
+            text-transform: uppercase
+            line-height: 36px
+            font-family: $extraBold
+            text-align: center
+            margin-top: 50px
+
+/****************** features ******************/
+.features
+    position: relative
+    padding-bottom: 120px
+    &-title
+        margin-top: 70px
+        color: #212121
+        font-size: 46px
+        font-family: $extraBold
+        line-height: 36px
+        margin-bottom: 90px
+        position: relative
+        &:after
+            content: '  '
+            display: block
+            width: 70px
+            height: 2px
+            background-color: #f6f6f6
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            position: absolute
+            left: 0
+            bottom: -20px
+    &-image
+        width: 100%
+        display: block
+        margin: 0 auto
+    &-feature
+        padding-left: 88px
+        font-family: $extraBold
+        font-size: 24px
+        line-height: 41px
+        color: #212121
+        margin-bottom: 40px
+        &:nth-child(2)
+            position: relative
+            &:before
+                content: ' '
+                display: block
+                width: 67px
+                height: 60px
+                background-image: url(../img/icons/shipped.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+        &:nth-child(3)
+            position: relative
+            &:before
+                content: ' '
+                display: block
+                width: 68px
+                height: 60px
+                background-image: url(../img/icons/wheelbarrow.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+        &:nth-child(4)
+            position: relative
+            &:before
+                content: ' '
+                display: block
+                width: 68px
+                height: 54px
+                background-image: url(../img/icons/soil.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+        &:nth-child(5)
+            position: relative
+            &:before
+                content: ' '
+                display: block
+                width: 58px
+                height: 58px
+                background-image: url(../img/icons/tools-and-utensils.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+        &:nth-child(6)
+            position: relative
+            margin-bottom: 0
+            &:before
+                content: ' '
+                display: block
+                width: 63px
+                height: 67px
+                background-image: url(../img/icons/leaf.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+    &-form
+        color: #000
+        padding: 48px 50px
+        position: absolute
+        bottom: -140px
+        box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
+        border: 15px solid #f5f5f5
+        background-color: #ffffff
+        max-width: 1148px
+        &_title
+            font-family: $extraBold
+            font-size: 36px
+            color: #212121
+            margin-bottom: 11px
+            &__costValue
+                color: #ffb125
+        &_subtitle
+            font-family: $regular
+            font-size: 22px
+            color: #212121
+        &_input
+            margin-top: 22px
+            background-color: #f5f5f5
+            border: 1px solid #dcdcdc
+            border-radius: 33px
+            padding: 23px 100px 23px 32px
+        &_btn
+            white-space: nowrap
+            font-size: 16px
+            font-family: $extraBold
+            text-transform: uppercase
+            color: #fff
+            padding: 23px 50px
+            margin-top: 22px
+            background-color: #8bc420
+            border-radius: 33px
+            cursor: pointer
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2)
+            &:hover
+                background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%)
+        &_privatePolicy
+            text-align: center
+            cursor: pointer
+            margin-top: 42px
+            font-family: $regular
+            font-size: 16px
+            line-height: 18px
+            color: #212121
+            text-decoration: underline
+
+/****************** partners ******************/
+.partners
+    padding-top: 190px
+    padding-bottom: 84px
+    background-color: #f5f5f5
+    &-title
+        font-family: $extraBold
+        font-size: 46px
+        color: #212121
+        text-align: center
+        padding-bottom: 16px
+        margin-bottom: 44px
+        position: relative
+        &:after
+            content: '  '
+            display: block
+            width: 70px
+            height: 2px
+            background-color: #f6f6f6
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+    &-slider
+        position: relative
+        margin: 0 auto
+        padding: 0 10px 0 0
+    &-slide
+        margin: 25px 0px 25px -9px
+        outline: 0
+    &-slide img
+        box-shadow: 0 5px 10px rgba(30, 31, 35, 0.15)
+        border-radius: 10px
+        display: block
+        margin: 0 auto
+#arrow-right
+    position: absolute
+    right: -60px
+    top: 30%
+    cursor: pointer
+    &:hover
+        fill: #ffb125
+    &:nth-child(2)
+        top: 20%
+#arrow-left
+    position: absolute
+    top: 30%
+    left: -60px
+    cursor: pointer
+    &:hover
+        fill: #ffb125
+
+#arrow-right2
+    position: absolute
+    right: -60px
+    top: 35%
+    cursor: pointer
+    &:hover
+        fill: #ffb125
+#arrow-left2
+    position: absolute
+    top: 35%
+    left: -60px
+    cursor: pointer
+    &:hover
+        fill: #ffb125
+#arrow-right3
+    position: absolute
+    right: -60px
+    top: 45%
+    cursor: pointer
+    &:hover
+        fill: #ffb125
+#arrow-left3
+    position: absolute
+    top: 45%
+    left: -60px
+    cursor: pointer
+    &:hover
+        fill: #ffb125
+
+/****************** feedback ******************/
+.feedback
+    position: relative
+    padding-top: 70px
+    padding-bottom: 84px
+    &-wrapper
+        margin: 0 10px
+        padding: 5px 10px 5px 15px
+        outline: 0
+        align-items: center
+        justify-content: center
+    &-title
+        font-family: $extraBold
+        font-size: 46px
+        color: #212121
+        text-align: center
+        padding-bottom: 16px
+        margin-bottom: 44px
+        position: relative
+        &:after
+            content: '  '
+            display: block
+            width: 70px
+            height: 2px
+            background-color: #f6f6f6
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+    &-card
+        box-shadow: 0 5px 10px rgba(30, 31, 35, 0.15)
+        padding: 36px 44px 20px 36px
+        border-radius: 10px
+    &-name
+        color: #212121
+        font-size: 32px
+        font-family: $extraBold
+        margin-bottom: 16px
+    &-namepost
+        color: #212121
+        font-size: 18px
+        font-family: $regular
+        padding-bottom: 16px
+        position: relative
+        margin-bottom: 40px
+        &:after
+            content: ' '
+            position: absolute
+            display: block
+            width: 500px
+            height: 1px
+            background-color: #dadada
+            bottom: 0
+            left: -17px
+    &-text
+        color: #323232
+        font-family: $bold  
+        font-style: italic
+        line-height: 32px
+        font-size: 18px
+
+    &-sertificat
+        width: 110%
+        display: block
+        background: #fff
+        box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
+        border-radius: 10px
+
+/****************** info ******************/
+.info
+    padding-bottom: 94px
+    padding-top: 70px
+    background-color: #f5f5f5
+    &-title
+        font-family: $extraBold
+        font-size: 46px
+        color: #212121
+        text-align: center
+        padding-bottom: 16px
+        margin-bottom: 44px
+        position: relative
+        &:after
+            content: '  '
+            display: block
+            width: 70px
+            height: 2px
+            background-color: #f6f6f6
+            background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+    &-slide
+        &_image
+            width: 100%
+            display: block
+            margin: 0 auto
+            border-radius: 5px
+
+
+/****************** director ******************/
+.director
+    position: relative
+    padding-top: 92px
+    padding-bottom: 75px
+    background: #c6a48b url(../img/director-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    &-btn
+        position: absolute
+        left: 0
+        bottom: 0
+        white-space: nowrap
+        font-family: $extraBold
+        font-size: 16px 
+        text-transform: uppercase
+        padding: 32px 56px
+        background-color: #8bc420
+        background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+        border-radius: 38px
+        box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2)
+    &-message
+        box-shadow: 0 15px 30px rgba(30, 31, 35, 0.15)
+        padding: 36px 46px 36px 36px
+        background-color: #fff
+        color: #212121
+        position: relative
+        border-radius: 10px
+        &::before 
+            content: ' '
+            bottom: -50px
+            left: 65px
+            position: absolute
+            border: 25px solid transparent
+            border-left: 25px solid #fff
+            border-top: 25px solid #fff
+        
+        &_title
+            font-family: $extraBold
+            font-size: 32px 
+            line-height: 32px
+            margin-bottom: 30px
+        &_text
+            font-family: $regular
+            font-size: 20px
+            line-height: 30px
+    &-sign_text
+        margin-left: 24px
+    &-sign
+        margin-top: 36px
+        color: #212121
+        margin-left: 100px
+    &-name
+        font-family: $extraBold
+        font-size: 24px
+        line-height: 28px
+    &-namepost
+        font-family: $regular
+        margin-top: 15px
+
+/****************** contacts ******************/
+.contacts
+    position: relative
+    color: #212121
+    &-content
+        display: flex
+        flex-direction: column
+        font-style: normal
+        margin-bottom: 35px
+    &-card
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: -420px
+        left: 0
+        border-radius: 10px
+        box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
+        padding: 43px 30px 50px 40px
+        background-color: #fff
+        &_name
+            font-family: $extraBold
+            font-size: 46px
+            padding-bottom: 16px
+            margin-bottom: 26px
+            position: relative
+            &:after
+                content: ' '
+                display: block
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 70px
+                height: 2px
+                background-color: #f6f6f6
+                background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%)
+        &_address
+            font-size: 22px
+            margin-bottom: 16px
+            font-family: $regular
+            &__bold
+                font-family: $extraBold
+        &_time
+            font-size: 22px
+            font-family: $regular
+            &__bold
+                font-family: $extraBold
+        &_phone
+            font-size: 22px
+            font-family: $extraBold
+            padding-left: 42px
+            margin-bottom: 14px
+            position: relative
+            color: #212121
+            &:after
+                content: ' '
+                display: block
+                width: 29px
+                height: 29px
+                position: absolute
+                left: 0
+                top: 0
+                background: url(../img/icons/phone.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+        &_mail
+            color: #212121
+            font-size: 22px
+            font-family: $extraBold
+            padding-left: 42px
+            position: relative
+            &:after
+                content: ' '
+                display: block
+                width: 29px
+                height: 29px
+                position: absolute
+                left: 0
+                top: 0
+                background: url(../img/icons/mail.svg)
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+
+/****************** footer ******************/
+.footer
+    padding: 32px 0
+    color: #212121
+    &-logo
+        font-family: $extraBold
+        color: #212121
+        white-space: nowrap
+        font-size: 36px
+        display: flex
+        align-items: center
+        &_text
+            margin-left: 20px
+    &-privatePolicy
+        color: #212121
+        font-size: 16px
+        font-family: $regular
+        text-decoration: underline
+        cursor: pointer
+        margin-left: auto
+        white-space: nowrap
+    &-developer
+        margin-left: auto
+        font-family: $regular
+        font-size: 16px
+        &_name
+            color: #212121
+            font-family: $bold
+@import media
