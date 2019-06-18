@@ -64,6 +64,7 @@
 
 body {
   color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -287,6 +288,10 @@ button {
   margin: 0 auto 30px auto;
 }
 
+.bushes-card:hover {
+  border: 2px solid #ececec;
+}
+
 .bushes-card_title {
   color: #212121;
   font-size: 22px;
@@ -386,6 +391,10 @@ button {
   padding: 20px 0 30px 0;
   position: relative;
   margin: 0 auto 30px auto;
+}
+
+.trees-card:hover {
+  border: 2px solid #ececec;
 }
 
 .trees-card_title {
@@ -755,7 +764,7 @@ button {
 }
 
 #arrow-right:hover {
-  fill: #ffb125;
+  fill: #75a915;
 }
 
 #arrow-left {
@@ -766,7 +775,7 @@ button {
 }
 
 #arrow-left:hover {
-  fill: #ffb125;
+  fill: #75a915;
 }
 
 #arrow-right2 {
@@ -777,7 +786,7 @@ button {
 }
 
 #arrow-right2:hover {
-  fill: #ffb125;
+  fill: #75a915;
 }
 
 #arrow-left2 {
@@ -788,7 +797,7 @@ button {
 }
 
 #arrow-left2:hover {
-  fill: #ffb125;
+  fill: #75a915;
 }
 
 #arrow-right3 {
@@ -799,7 +808,7 @@ button {
 }
 
 #arrow-right3:hover {
-  fill: #ffb125;
+  fill: #75a915;
 }
 
 #arrow-left3 {
@@ -810,7 +819,7 @@ button {
 }
 
 #arrow-left3:hover {
-  fill: #ffb125;
+  fill: #75a915;
 }
 
 /****************** feedback ******************/
@@ -1200,7 +1209,315 @@ iframe {
 }
 
 /**** modal ********/
+.modal {
+  padding: 50px 20px;
+  background: #fff;
+  color: #212121;
+}
+
+.modal-back {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 14px;
+  color: #212121;
+  padding: 19px 38px 19px 60px;
+  border: 2px solid #75a915;
+  border-radius: 25px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.modal-back:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  background: url(../img/icons/arrowtoleft.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 9px;
+  height: 15px;
+  left: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.card-header_image {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.card-contacts_btn {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 23px 46px;
+  background-color: #8bc420;
+  border-radius: 38px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8bc420), to(#75a915));
+  background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%);
+  -webkit-box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-contacts_btn:hover {
+  background-color: #9bda24;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #8bc420), to(#75a915));
+  background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%);
+}
+
+.card-info {
+  margin-left: 60px;
+}
+
+.card-info_text {
+  font-family: "CirceRounded-Regular";
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 38px;
+}
+
+.card-title {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 36px;
+  margin-bottom: 22px;
+}
+
+.card-table {
+  font-family: "CirceRounded-Regular";
+}
+
+.card-table_name {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 18px;
+}
+
+.card-table_name:first-child {
+  padding-left: 18px;
+}
+
+.card-table_meter {
+  padding-left: 18px;
+}
+
+.card-sale {
+  padding: 42px 20px 34px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid #ffb125;
+  text-align: center;
+  margin-left: 32px;
+  font-family: "CirceRounded-Regular";
+}
+
+.card-sale_meter {
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+
+.card-sale_title {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 36px;
+  color: #ffb125;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.card-sale_old {
+  text-decoration: line-through;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.card-sale_new {
+  font-size: 32px;
+  font-family: "CirceRounded-ExtraBold";
+  margin-bottom: 24px;
+}
+
+.card-sale_during {
+  font-size: 18px;
+}
+
+.card-contacts_phone {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 34px;
+  color: #212121;
+  margin-top: 36px;
+  margin-right: 20px;
+}
+
+.card-contacts_social {
+  margin-top: 36px;
+}
+
+.card-contacts_btn__wrapper {
+  margin-top: 38px;
+  margin-right: auto;
+  margin-left: 36px;
+}
+
+.card-slider {
+  margin-top: 30px;
+}
+
+.card-slide {
+  margin: 0 15px;
+}
+
+.slider-for {
+  overflow: hidden;
+}
+
+.slider-nav {
+  margin-top: 35px;
+}
+
+.slider-nav_image {
+  margin: 0 auto;
+}
+
+.table-details {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.table-details_name {
+  padding-left: 30px;
+  width: 40%;
+}
+
+.table-details_description {
+  width: 60%;
+}
+
+.payvery {
+  margin-top: 36px;
+  margin-bottom: 46px;
+}
+
+.payment {
+  margin-bottom: 20px;
+}
+
+.payment-title {
+  font-size: 32px;
+  font-family: "CirceRounded-ExtraBold";
+  color: #212121;
+  margin-bottom: 28px;
+}
+
+.payment-text {
+  font-family: "CirceRounded-Regular";
+  font-size: 20px;
+  color: #212121;
+  line-height: 24px;
+}
+
+.delivery-title {
+  font-size: 32px;
+  font-family: "CirceRounded-ExtraBold";
+  color: #212121;
+  margin-bottom: 28px;
+}
+
+.delivery-text {
+  font-family: "CirceRounded-Regular";
+  font-size: 20px;
+  color: #212121;
+  line-height: 24px;
+}
+
+.formSale {
+  color: #000;
+  padding: 28px 50px;
+  -webkit-box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15);
+          box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15);
+  border: 15px solid #f5f5f5;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.formSale_title {
+  font-family: "CirceRounded-ExtraBold";
+  font-size: 36px;
+  color: #212121;
+  margin-bottom: 11px;
+}
+
+.formSale_title__costValue {
+  color: #ffb125;
+}
+
+.formSale_subtitle {
+  font-family: "CirceRounded-Regular";
+  font-size: 22px;
+  color: #212121;
+}
+
+.formSale_input {
+  margin-top: 22px;
+  background-color: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  border-radius: 33px;
+  padding: 23px 30px 23px 32px;
+}
+
+.formSale_btn {
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: "CirceRounded-ExtraBold";
+  text-transform: uppercase;
+  color: #fff;
+  padding: 23px 50px;
+  margin-top: 22px;
+  background-color: #8bc420;
+  border-radius: 33px;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8bc420), to(#75a915));
+  background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%);
+  -webkit-box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.formSale_btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #8bc420), to(#75a915));
+  background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%);
+}
+
+.formSale_privatePolicy {
+  text-align: left;
+  cursor: pointer;
+  margin-top: 42px;
+  font-family: "CirceRounded-Regular";
+  font-size: 16px;
+  line-height: 18px;
+  color: #212121;
+  text-decoration: underline;
+}
+
+.formSale_image {
+  position: absolute;
+  top: -30px;
+  right: 56px;
+  display: none;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
+  .card-info {
+    margin: 0;
+  }
+  .card-contacts_btn__wrapper {
+    margin-left: 0;
+  }
   .header-main_title {
     font-size: 40px;
   }
@@ -1235,6 +1552,12 @@ iframe {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .card-info {
+    margin-left: 20px;
+  }
+  .card-contacts_btn__wrapper {
+    margin-left: 0;
+  }
   .director {
     background: none;
   }
@@ -1299,6 +1622,31 @@ iframe {
 }
 
 @media (max-width: 767px) {
+  .card-info_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .card-contacts_social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-info {
+    margin: 0;
+  }
+  .card-contacts_btn__wrapper {
+    margin: 50px auto;
+  }
   #arrow-right,
   #arrow-right2,
   #arrow-right3,
@@ -1392,9 +1740,48 @@ iframe {
   .info-title {
     font-size: 35px;
   }
+  .formSale_title,
+  .formSale_subtitle,
+  .formSale_btn,
+  .formSale_privatePolicy {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .formSale_input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 575px) {
+  .card-info_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .card-contacts_social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-info {
+    margin: 0;
+  }
+  .card-contacts_btn__wrapper {
+    margin: 50px auto;
+  }
   .features-form {
     text-align: center;
     max-width: 90%;

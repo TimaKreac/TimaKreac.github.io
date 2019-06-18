@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $('a[href^="#"]').on('click', function (e) {
+        var target = this.hash,
+            $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 
     $('.partners-slider').slick({
         slidesToShow: 4,
@@ -60,58 +69,57 @@ $(document).ready(function () {
 
     });
 
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        autoplaySpeed: 3000,
+        asNavFor: '.slider-nav',
+        autoplay: true
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        arrows: false,
+        dots: false,
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+
+
+        ]
+
+
+    });
 
     $(function () {
         $(".features-form_input").mask("+7 (999) 999-99-99");
+        $(".formSale_input").mask("+7 (999) 999-99-99");
     });
 
+    $('#modal').popup();
 
-    /********  modal *******/
-    // $(".modal").each(function () {
-    //     $(this).wrap('<div class="overlay"></div>')
-    // });
-
-    // $(".open-modal").on('click', function (e) {
-    //     e.preventDefault();
-    //     e.stopImmediatePropagation;
-
-    //     var $this = $(this),
-    //         modal = $($this).data("modal");
-
-    //     $(modal).parents(".overlay").addClass("open");
-    //     setTimeout(function () {
-    //         $(modal).addClass("open");
-    //     }, 350);
-
-    //     $(document).on('click', function (e) {
-    //         var target = $(e.target);
-
-    //         if ($(target).hasClass("overlay")) {
-    //             $(target).find(".modal").each(function () {
-    //                 $(this).removeClass("open");
-    //             });
-    //             setTimeout(function () {
-    //                 $(target).removeClass("open");
-    //             }, 350);
-    //         }
-
-    //     });
-
-    // });
-
-    // $(".close-modal").on('click', function (e) {
-    //     e.preventDefault();
-    //     e.stopImmediatePropagation;
-
-    //     var $this = $(this),
-    //         modal = $($this).data("modal");
-
-    //     $(modal).removeClass("open");
-    //     setTimeout(function () {
-    //         $(modal).parents(".overlay").removeClass("open");
-    //     }, 350);
-
-    // });
 
 
 });
