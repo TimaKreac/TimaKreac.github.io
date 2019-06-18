@@ -588,6 +588,33 @@
         font-size: 16px;
         max-width: 90%;
     }
+
+    .table-details {
+        display: none;
+    }
+
+    .formSale {
+        padding: 15px;
+    }
+
+    .card-info {
+        position: relative;
+        right: 32px;
+    }
+
+    .card-contacts {
+        position: relative;
+    }
+
+    .formSale_title {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .formSale_subtitle {
+        font-size: 18px;
+        text-align: left;
+    }
 }
 
 // sm

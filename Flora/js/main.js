@@ -110,9 +110,13 @@ $(document).ready(function () {
     $(function () {
         $(".features-form_input").mask("+7 (999) 999-99-99");
         $(".formSale_input").mask("+7 (999) 999-99-99");
+        $(".modal-call_phone").mask("+7 (999) 999-99-99");
     });
 
     $('#modal').popup();
+    $('.modal-thanks').popup();
+    $('.modal-write').popup();
+    $('.modal-call').popup();
 
 
 
