@@ -50,7 +50,7 @@ $(document).ready(function () {
     $('.info-slider').slick({
         slidesToShow: 1,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         centerMode: true,
         infinite: true,
