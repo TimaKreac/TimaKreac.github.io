@@ -599,7 +599,7 @@
 
     .card-info {
         position: relative;
-        right: 32px;
+        right: 35px;
     }
 
     .card-contacts {
@@ -614,6 +614,19 @@
     .formSale_subtitle {
         font-size: 18px;
         text-align: left;
+    }
+
+    .formSale_input {
+        padding: 20px;
+    }
+
+    .formSale_btn {
+        padding: 20px 35px;
+    }
+
+    .modal-back {
+        position: relative;
+        right: 20px;
     }
 }
 
