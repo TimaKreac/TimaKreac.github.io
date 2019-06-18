@@ -1,7 +1,6 @@
 @import fonts
 @import vars
 
-
 body
     width: 100%
     color: #fff
@@ -31,14 +30,13 @@ tr
         &_logo
             font-family: $extraBold
             color: #fff
-            font-size: 36px
             display: flex
             align-items: center
             &__text
                 padding-left: 70px
-                margin-left: 10px
                 white-space: nowrap
                 position: relative
+                font-size: 36px
                 &:before
                     content: ' '
                     display: block
@@ -156,8 +154,6 @@ tr
         padding: 20px 0 30px 0
         position: relative
         margin: 0 auto 30px auto
-        &:hover
-            border: 2px solid #ececec
         &_title
             color: #212121
             font-size: 22px
@@ -169,6 +165,8 @@ tr
             justify-content: center
             text-align: center
             min-height: 50px
+            &:hover
+                text-decoration: underline
         &_image
             border-radius: 10px
             display: block
@@ -228,8 +226,6 @@ tr
         padding: 20px 0 30px 0
         position: relative
         margin: 0 auto 30px auto
-        &:hover
-            border: 2px solid #ececec
         &_title
             color: #212121
             font-size: 22px
@@ -241,6 +237,8 @@ tr
             justify-content: center
             text-align: center
             min-height: 50px
+            &:hover
+                text-decoration: underline
         &_image
             border-radius: 10px
             display: block
@@ -273,8 +271,8 @@ tr
         background-position: center center
         padding: 20px
         border: 1px solid black
-        max-height: 422px
         max-width: 100%
+        max-height: 422px
         &_border
             padding: 85px 0 90px 0
             margin: 0 auto
@@ -295,7 +293,6 @@ tr
             font-family: $extraBold
             text-align: center
             margin-top: 50px
-
 /****************** features ******************/
 .features
     width: 100%
@@ -447,7 +444,7 @@ tr
             box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2)
             &:hover
                 background-image: linear-gradient(to right, #8bc420 100%, #75a915 100%)
-        &_privatePolicy
+        &_request
             text-align: center
             cursor: pointer
             margin-top: 42px
@@ -455,6 +452,7 @@ tr
             font-size: 16px
             line-height: 18px
             color: #212121
+        &_privatePolicy
             text-decoration: underline
 
 /****************** partners ******************/
@@ -489,6 +487,7 @@ tr
     &-slide
         margin: 25px 0px 25px -9px
         outline: 0
+        cursor: pointer
     &-slide img
         box-shadow: 0 5px 10px rgba(30, 31, 35, 0.15)
         border-radius: 10px
@@ -546,10 +545,11 @@ tr
     padding-bottom: 84px
     &-wrapper
         margin: 0 10px
-        padding: 5px 10px 5px 15px
+        padding: 15px
         outline: 0
         align-items: center
         justify-content: center
+        cursor: pointer
     &-title
         font-family: $extraBold
         font-size: 46px
@@ -633,9 +633,11 @@ tr
             left: 50%
             transform: translateX(-50%)
             bottom: 0
+    &-slider
+        margin: 0 15px
+        cursor: pointer
     &-slide
         &_image
-            width: 100%
             display: block
             margin: 0 auto
             border-radius: 5px
@@ -792,25 +794,38 @@ tr
     width: 100%
     padding: 32px 0
     color: #212121
-    &-logo
+    &-content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+    &-logo_text
         font-family: $extraBold
         color: #212121
         white-space: nowrap
         font-size: 36px
-        display: flex
-        align-items: center
-        &_text
-            margin-left: 20px
+        padding-left: 65px
+        position: relative
+        &:before
+            content: ' '
+            display: block
+            width: 56px
+            height: 50px
+            background: url(../img/logo.png)
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: contain
+            position: absolute
+            top: -5px
+            left: 0
     &-privatePolicy
         color: #212121
         font-size: 16px
         font-family: $regular
         text-decoration: underline
         cursor: pointer
-        margin-left: auto
         white-space: nowrap
     &-developer
-        margin-left: auto
         font-family: $regular
         font-size: 16px
         &_name
@@ -936,6 +951,7 @@ iframe
         margin-top: 30px
     &-slide
         margin: 0 15px
+        cursor: pointer
 
 .slider-for
 	overflow: hidden
@@ -1034,4 +1050,6 @@ iframe
         display: none
 .map
     border: 0
+.slick-slide 
+    padding: 0 15px
 @import media

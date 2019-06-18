@@ -15,7 +15,7 @@
         font-size: 25px;
     }
 
-    .header-navbar_btn {
+    .header-nav_btn {
         padding: 14px 40px
     }
 
@@ -73,10 +73,13 @@
 //lg
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .title {
+        font-size: 38px;
+    }
+
     .card-info {
         margin-left: 20px;
     }
-
 
     .card-contacts_btn__wrapper {
         margin-left: 0;
@@ -111,6 +114,8 @@
         padding-top: 250px;
     }
 
+
+
     .features-form {
         max-width: 720px;
         padding: 30px 50px;
@@ -136,10 +141,12 @@
     }
 
     .footer-privatePolicy {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: left;
-        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo_text {
+        font-size: 28px;
     }
 
     .footer-developer {
@@ -159,7 +166,21 @@
 
 //md
 
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
+    .header-nav_phone {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header-nav_email {
+        text-align: center;
+    }
+
+    .header-nav_logo__text {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
     .card-info_wrapper {
         display: flex;
         flex-direction: column;
@@ -186,6 +207,8 @@
         padding-bottom: 150px;
     }
 
+
+
     .director-btn {
         margin-left: 40px;
     }
@@ -198,9 +221,7 @@
         padding-bottom: 0px
     }
 
-    .header-navbar_logo {
-        justify-content: center;
-    }
+
 
     .header-main_title {
         font-size: 26px;
@@ -272,12 +293,9 @@
         margin-left: 0;
     }
 
-    .footer-developer {
-        margin-left: 0;
-    }
-
-    .footer-wrapper {
-        flex-direction: column;
+    .footer-content {
+        display: flex;
+        flex-flow: column wrap;
     }
 
     .info-title {
@@ -298,15 +316,106 @@
 
 }
 
-@media (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575px) {
+    .header-nav_logo__text {
+        font-size: 24px;
+        margin: 0 auto;
+    }
+
+    .header-nav_logo__text:before {
+        width: 30px;
+        left: 25px;
+        top: -10px;
+        justify-content: center;
+    }
+
+    .header-nav_phone {
+        font-size: 18px;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .header-nav_email {
+        font-size: 18px;
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .bushes-card_title,
+    .trees-card_title {
+        font-size: 20px;
+    }
+
+    .title:after {
+        width: 40px;
+    }
+
+    .header-main .row {
+        justify-content: center;
+    }
+
+    .header-main_title {
+        font-size: 28px;
+        line-height: 35px;
+        padding-top: 20px;
+    }
+
+    .header-main_subtitle {
+        font-size: 18px;
+        margin: 0 auto 45px auto;
+        width: 70%;
+    }
+
+    .header-main_feature__icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .header-main_feature__title {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    .header-main_feature__text {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .trees-sale {
+        max-width: 320px;
+    }
+
+    .trees-sale_text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .trees-sale_title {
+        font-size: 30px;
+    }
 
     .features {
         padding-bottom: 50px;
     }
 
+    .features-feature {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
     .partners {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .partners-slide img {
+        width: 100%;
     }
 
     .contacts {
@@ -316,7 +425,10 @@
     }
 
     .contacts-card {
-        left: none;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0px;
+        top: -360px;
     }
 
     .features-form_title {
@@ -331,14 +443,6 @@
         padding: 13px 0px 13px 22px;
     }
 
-    .footer-logo img {
-        width: 50%;
-    }
-
-    .footer-logo_text {
-        margin-left: 5px;
-        font-size: 20px;
-    }
 
     .formSale {
         max-width: 450px;
@@ -364,28 +468,110 @@
         margin: 50px auto;
     }
 
-    .features-form {
-        text-align: center;
-        max-width: 90%;
-        right: 50%;
-        transform: translateX(50%);
-        bottom: -250px;
+    .feedback-card {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .feedback-text {
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(#000, 0.2);
+        font-family: $regular;
+    }
+
+    .feedback-name {
+        font-size: 24px;
+    }
+
+    .feedback-namepost {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+        font-family: $bold;
     }
 
     .feedback-namepost:after {
         width: 0px;
     }
 
-    .header-navbar_logo img {
-        width: 60%;
-        margin: 0 auto;
-        display: block;
+    .director-sign {
+        margin: 50px 0 0 0;
     }
 
-    .header-navbar_email,
-    .header-navbar_phone {
-        margin-top: 10px;
-        text-align: center;
+    .director {
+        background: none;
+        padding: 50px 0;
+        border-bottom: 1px solid rgba(#000, 0.2);
+    }
+
+    .director-message_title {
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .director-message_text {
+        padding-top: 10px;
+        font-size: 16px;
+        border-top: 1px solid rgba(#000, 0.2);
+        line-height: 18px;
+    }
+
+    .contacts {
+        border-bottom: 1px solid rgba(#000, 0.2);
+        border-top: 1px solid rgba(#000, 0.2);
+        padding: 450px 0 0 0;
+    }
+
+    .contacts-card_name {
+        margin-bottom: 30px;
+    }
+
+    .contacts-card_phone,
+    .contacts-card_mail {
+        font-size: 18px;
+        padding-left: 25px;
+    }
+
+    .contacts-card_phone::after,
+    .contacts-card_mail::after {
+        width: 20px;
+        top: -5px;
+    }
+
+    .contacts-card_address,
+    .contacts-card_time {
+        font-size: 18px;
+    }
+
+    .footer-logo_text {
+        font-size: 24px;
+        padding-left: 35px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .footer-logo_text:before {
+        width: 30px;
+        height: 30px;
+        left: 0px;
+        top: 0;
+        justify-content: center;
+    }
+
+    .footer-developer {
+        margin: 0 auto;
+    }
+
+    .footer-privatePolicy {
+        margin: 20px auto;
+
     }
 
     .slider-for {

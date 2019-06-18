@@ -31,6 +31,7 @@ $(document).ready(function () {
                 }
             },
 
+
         ]
 
     });
@@ -48,11 +49,12 @@ $(document).ready(function () {
 
     $('.info-slider').slick({
         slidesToShow: 1,
-        autoplay: true,
+        arrows: false,
+        autoplay: false,
         autoplaySpeed: 4000,
+        centerMode: true,
         infinite: true,
         speed: 500,
-        fade: true,
         cssEase: 'linear',
         prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-left3" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
 
