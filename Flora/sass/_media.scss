@@ -286,6 +286,51 @@
 }
 
 @media (max-width: 575px) {
+
+    .features {
+        padding-bottom: 50px;
+    }
+
+    .partners {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contacts {
+        position: relative;
+        padding: 450px 0 50px 0;
+
+    }
+
+    .contacts-card {
+        left: none;
+    }
+
+    .features-form_title {
+        font-size: 24px;
+    }
+
+    .features-form_subtitle {
+        font-size: 16px;
+    }
+
+    .features-form_input {
+        padding: 13px 0px 13px 22px;
+    }
+
+    .footer-logo img {
+        width: 50%;
+    }
+
+    .footer-logo_text {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+    .formSale {
+        max-width: 450px;
+    }
+
     .card-info_wrapper {
         display: flex;
         flex-direction: column;
@@ -328,6 +373,21 @@
     .header-navbar_phone {
         margin-top: 10px;
         text-align: center;
+    }
+
+    .slider-for {
+        display: none;
+    }
+
+    .payment-title,
+    .delivery-title {
+        font-size: 24px;
+    }
+
+    .payment-text,
+    .delivery-text {
+        font-size: 16px;
+        max-width: 90%;
     }
 }
 
