@@ -6,8 +6,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" id="arrow-left" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
-        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" id="arrow-right" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
+        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-left" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
+        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-right" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
 
         responsive: [{
                 breakpoint: 1200,
@@ -41,9 +41,9 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
 
-        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" id="arrow-left2" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
+        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-left2" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
 
-        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" id="arrow-right2" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
+        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-right2" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
     });
 
     $('.info-slider').slick({
@@ -54,9 +54,9 @@ $(document).ready(function () {
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" id="arrow-left3" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
+        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-left3" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
 
-        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" id="arrow-right3" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
+        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-right3" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
 
 
     });
