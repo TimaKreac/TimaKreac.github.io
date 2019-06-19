@@ -3,6 +3,7 @@
 body
     width: 100%
     color: #fff
+    position: relative
     font-family: sans-serif
 a
     text-decoration: none
@@ -486,7 +487,7 @@ tr
         margin: 0 auto
         padding: 0 10px 0 0
     &-slide
-        margin: 25px 0px 25px -9px
+        margin: 25px 0px 25px 0px
         outline: 0
         cursor: pointer
     &-slide img
@@ -596,12 +597,14 @@ tr
         border-top: 1px solid rgba(#000,0.2)
 
     &-sertificat
-        width: 110%
+        width: 115%
+        padding: 15px
         display: block
         background: #fff
         box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
         border-radius: 10px
-
+.error
+    display: none
 /****************** info ******************/
 .info
     width: 100%
@@ -640,6 +643,7 @@ tr
             margin: 0 auto
             border-radius: 5px
             max-width: 80%
+            padding: 0 50px
 
 
 /****************** director ******************/
@@ -723,6 +727,13 @@ tr
         box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15)
         padding: 43px 30px 50px 40px
         background-color: #fff
+        &_cancel
+            position: absolute
+            right: 20px
+            top: 20px
+            cursor: pointer
+            z-index: 1
+        
         &_name
             font-family: $extraBold
             font-size: 46px
@@ -1052,10 +1063,7 @@ iframe
         display: none
 .map
     border: 0
-.slick-slide 
-    position: relative
-    padding: 0 50px
-    outline: 0
+
 #arrow-right4
     position: absolute
     right: 70px

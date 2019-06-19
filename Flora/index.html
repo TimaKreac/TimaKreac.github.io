@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 d-flex justify-content-center">
-                        <a href="#bushes" class="header-main_btn d-none d-md-block">Перейти в каталог</a>
+                        <a href="#bushes" class="header-main_btn  go_to">Перейти в каталог</a>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
     </section>
     <!-- /bushes -->
     <!-- trees -->
-    <section class="trees">
+    <section class="trees" id="trees">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -357,7 +357,7 @@
                                     required>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <button class="features-form_btn modal-call_open" type="submit">оставить
+                                <button class="features-form_btn modal-thanks_open" type="submit">оставить
                                     заявку</button>
                             </div>
                             <div class="col-lg-4 col-md-12">
@@ -466,7 +466,7 @@
         <div class="container">
             <div class="col-12 ">
                 <h2 class="info-title title">В наших питомниках более 30 видов растений
-                    на общей площади в 1,5га </h2>
+                    на общей площади в 1,5 га </h2>
             </div>
         </div>
         <div class="container-fluid">
@@ -482,8 +482,8 @@
     <section class="director">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="director-btn d-none d-md-block modal-write_open">Написать
+                <div class="col-md-4 position-xs-static position-md-relative">
+                    <a href="#" class="director-btn modal-write_open">Написать
                         директору</a>
                 </div>
                 <div class="col-md-6 offset-md-2">
@@ -511,13 +511,14 @@
     <!-- /director -->
     <!-- contacts -->
     <section class="contacts">
-        <iframe class="map d-none d-sm-block"
+        <iframe class="map "
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a3f2a416b10decc30826cb3eae48f404bf50249576fefd8f35cd7dcda7d8683&amp;source=constructor"
             height="500"></iframe>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12 сontacts-wrapper">
                     <div class="contacts-card ">
+                        <img src="img/icons/cancel.png" alt="cancel-2" class="contacts-card_cancel">
                         <h6 class="contacts-card_name title">Контакты</h6>
                         <address class="contacts-content">
                             <span class="contacts-card_address"><span class="contacts-card_address__bold">Адрес:</span>
@@ -782,7 +783,7 @@
         <p class="modal-call_request">Отправляя заявку я соглашаюсь<br>
             с <a href="#" class="modal-call_privatePolicy">политикой конфиденциальности</a></p>
     </div>
-
+    <div class="error">Данное устройство не поддерживается!</div>
     <!-- /modal -->
     <script>
         const images = document.querySelectorAll('img[data-src]');
@@ -811,9 +812,8 @@
             observer.observe(img);
         })
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery.popupoverlay.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/slick.min.js"></script>

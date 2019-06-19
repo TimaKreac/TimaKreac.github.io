@@ -1,6 +1,15 @@
 $(document).ready(function () {
-
-
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 600);
+    });
+    $('.contacts-card_cancel').click(function () {
+        $('.contacts-card').css('display', 'none');
+    })
     $('.partners-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -49,7 +58,7 @@ $(document).ready(function () {
 
     $('.info-slider').slick({
         slidesToShow: 1,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 4000,
         centerMode: true,
@@ -60,17 +69,19 @@ $(document).ready(function () {
         prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-left4" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
         nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-right4" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
         responsive: [{
-            breakpoint: 1200,
-            settings: {
-                arrows: false,
-                variableWidth: false,
-            }
-        }, {
-            breakpoint: 1700,
-            settings: {
-                arrows: true,
-            }
-        }, ]
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    variableWidth: true,
+                }
+            },
+        ]
     });
 
     $('.slider-for').slick({

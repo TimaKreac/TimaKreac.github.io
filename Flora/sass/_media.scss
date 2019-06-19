@@ -1,4 +1,8 @@
 @media (min-width: 992px) and (max-width: 1199px) {
+    .info-slide_image {
+        padding: 0 20px;
+    }
+
     .card-info {
         margin: 0;
     }
@@ -73,8 +77,16 @@
 //lg
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .info-slide_image {
+        padding: 0 20px;
+    }
+
     .title {
         font-size: 38px;
+    }
+
+    .director {
+        background-position: -700px center;
     }
 
     .card-info {
@@ -83,10 +95,6 @@
 
     .card-contacts_btn__wrapper {
         margin-left: 0;
-    }
-
-    .director {
-        background: none;
     }
 
     .header-main_title {
@@ -167,6 +175,18 @@
 //md
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .info-slide_image {
+        padding: 0 20px;
+    }
+
+    .header-main_btn {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
     .header-nav_phone {
         text-align: center;
         margin-bottom: 10px;
@@ -201,24 +221,40 @@
         margin: 50px auto;
     }
 
-
-
-    .partners {
+    .director {
         padding-bottom: 150px;
+        border-bottom: 1px solid rgba(#000, 0.2);
     }
 
 
+    .director-sign {
+        margin-top: 70px;
+        margin-left: 50px;
+    }
 
     .director-btn {
-        margin-left: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        padding: 20px;
     }
 
-    .director {
-        background: none;
+    .director-message_title {
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 10px;
     }
+
+    .director-message_text {
+        padding-top: 10px;
+        border-top: 1px solid rgba(#000, 0.2);
+    }
+
+
 
     .partners {
-        padding-bottom: 0px
+        padding-bottom: 100px
     }
 
 
@@ -298,10 +334,6 @@
         flex-flow: column wrap;
     }
 
-    .info-title {
-        font-size: 35px;
-    }
-
     .formSale_title,
     .formSale_subtitle,
     .formSale_btn,
@@ -317,10 +349,32 @@
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
+    .info-slide_image {
+        padding: 0 20px;
+    }
+
+    .header-main_btn {
+        padding: 15px;
+    }
+
     .header-nav_logo__text {
         font-size: 22px;
         margin: 0 auto;
         padding-left: 45px;
+    }
+
+    .info-title {
+        font-size: 22px !important;
+        text-align: left;
+    }
+
+    .info-title:after {
+        left: 35px;
+    }
+
+    .info-slide_image {
+        width: 320px;
+        padding: 0 10px;
     }
 
     .header-nav_logo__text:before {
@@ -421,15 +475,15 @@
 
     .contacts {
         position: relative;
-        padding: 450px 0 50px 0;
-
+        padding: 0;
     }
 
     .contacts-card {
-        padding: 0;
+        padding: 10px;
         box-shadow: none;
-        border-radius: 0px;
-        top: -360px;
+        left: 0;
+        top: -350px;
+        height: 300px;
     }
 
     .features-form_title {
@@ -465,13 +519,23 @@
         margin: 0;
     }
 
+
+
     .card-contacts_btn__wrapper {
         margin: 50px auto;
+    }
+
+    .feedback {
+        padding: 30px 0 10px 0;
     }
 
     .feedback-card {
         padding: 10px;
         margin: 10px;
+    }
+
+    .feedback-title {
+        margin-bottom: 20px;
     }
 
     .feedback-text {
@@ -503,29 +567,45 @@
     }
 
     .director {
-        background: none;
-        padding: 50px 0;
+        background-position: -650px center;
+        padding: 50px 0 110px 0;
         border-bottom: 1px solid rgba(#000, 0.2);
     }
 
+    .director-btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        padding: 20px;
+    }
+
     .director-message_title {
-        font-size: 24px;
+        font-size: 20px;
         margin: 0;
         padding-bottom: 10px;
     }
 
     .director-message_text {
         padding-top: 10px;
-        font-size: 16px;
+        font-size: 13px;
         border-top: 1px solid rgba(#000, 0.2);
         line-height: 18px;
     }
 
-    .contacts {
-        border-bottom: 1px solid rgba(#000, 0.2);
-        border-top: 1px solid rgba(#000, 0.2);
-        padding: 450px 0 0 0;
+    .director-name {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
     }
+
+    .director-namepost {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
 
     .contacts-card_name {
         margin-bottom: 30px;
@@ -642,7 +722,7 @@
 }
 
 
-@media (min-width:1300px) {
+@media (min-width:1300px) and (max-width: 1340px) {
     #arrow-right4 {
         position: absolute;
         right: 100px;
@@ -656,7 +736,82 @@
     }
 }
 
-@media (min-width:1400px) {
+@media (min-width:1341px) and (max-width: 1440px) {
+    #arrow-right4 {
+        position: absolute;
+        right: 160px;
+        top: 45%;
+    }
+
+    #arrow-left4 {
+        position: absolute;
+        top: 45%;
+        left: 160px;
+    }
+}
+
+@media (max-width:315px) {
+    body>* {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error {
+        display: block !important;
+        text-align: center;
+        font-size: 20px;
+        color: #212121;
+        position: absolute;
+        margin: auto;
+        top: 200px;
+        left: 0;
+    }
+}
+
+@media (min-width: 1863px) and (max-width: 2000px) {
+    #arrow-right4 {
+        right: 22%;
+    }
+
+    #arrow-left4 {
+        left: 22%;
+    }
+}
+
+@media (min-width:1763px) and (max-width: 1862px) {
+    #arrow-right4 {
+        position: absolute;
+        right: 20%;
+        top: 45%;
+    }
+
+    #arrow-left4 {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+    }
+}
+
+@media (min-width:1657px) and (max-width: 1762px) {
+    #arrow-right4 {
+        position: absolute;
+        right: 18%;
+        top: 45%;
+    }
+
+    #arrow-left4 {
+        position: absolute;
+        top: 45%;
+        left: 18%;
+    }
+}
+
+@media (min-width:1441px) and (max-width: 1656px) {
     #arrow-right4 {
         position: absolute;
         right: 16%;
