@@ -598,40 +598,45 @@
         padding: 15px;
     }
 
-
-
-
     .card-contacts_btn {
         padding: 10px;
+        width: 100%;
     }
 
     .card-contacts_phone {
         font-size: 24px;
+        margin: 10px auto;
+
     }
 
     .formSale_title {
-        font-size: 24px;
+        font-size: 20px;
         text-align: left;
     }
 
     .formSale_subtitle {
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
     }
 
+    .formSale_request,
+    .formSale_privatePolicy {
+        font-size: 12px;
+        margin: 10px auto;
+    }
+
     .formSale_input {
-        padding: 10px 0 10px 10px;
-        font-size: 16px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        font-size: 12px;
     }
 
     .formSale_btn {
         padding: 10px;
+        width: 100%;
+        font-size: 12px;
     }
 
-    .modal-back {
-        position: relative;
-        right: 20px;
-    }
 
 
 }
@@ -666,6 +671,23 @@
 }
 
 @media (max-width:670px) {
+
+    .card-table {
+        width: 220px;
+        text-align: center;
+    }
+
+    .modal-back {
+        padding: 10px;
+    }
+
+    .modal-back:before {
+        display: none;
+    }
+
+    .card-table_name:first-child {
+        padding: 0;
+    }
 
     .modal-call,
     .modal-write {
