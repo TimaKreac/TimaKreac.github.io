@@ -671,9 +671,12 @@
 }
 
 @media (max-width:670px) {
+    .card-contacts_social img {
+        margin: 10px;
+    }
 
     .card-table {
-        width: 220px;
+        width: 230px;
         text-align: center;
     }
 
