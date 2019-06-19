@@ -847,12 +847,17 @@
         padding: 0;
     }
 
+    .card-title {
+        font-size: 28px;
+    }
+
     .modal-call,
     .modal-write {
-        max-width: 500px
+        max-width: 80%
     }
 
     .modal-thanks {
+        padding: 20px;
         max-width: 90%;
     }
 
