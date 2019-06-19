@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     $('.info-slider').slick({
         slidesToShow: 1,
-        arrows: true,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 4000,
         centerMode: true,
@@ -62,7 +62,13 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 1200,
             settings: {
+                arrows: false,
                 variableWidth: false,
+            }
+        }, {
+            breakpoint: 1700,
+            settings: {
+                arrows: true,
             }
         }, ]
     });
