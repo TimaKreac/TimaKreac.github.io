@@ -132,6 +132,7 @@ $(document).ready(function () {
         $(".features-form_input").mask("+7 (999) 999-99-99");
         $(".formSale_input").mask("+7 (999) 999-99-99");
         $(".modal-call_phone").mask("+7 (999) 999-99-99");
+        $(".modal-write_phone").mask("+7 (999) 999-99-99");
     });
 
     $('#modal').popup();

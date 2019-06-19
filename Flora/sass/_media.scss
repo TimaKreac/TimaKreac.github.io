@@ -415,7 +415,7 @@
     }
 
     .header-main_title {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 35px;
         padding-top: 20px;
     }
@@ -470,7 +470,7 @@
     }
 
     .partners-slide img {
-        width: 100%;
+        width: 90%;
     }
 
     .contacts {
@@ -884,18 +884,19 @@
 
     .modal-call_title,
     .modal-write_title {
-        font-size: 24px;
+        font-size: 20px;
         white-space: nowrap
     }
 
     .modal-call_subtitle,
     .modal-write_subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .modal-call input,
     .modal-write input {
         max-width: 100%;
+        font-size: 16px;
         padding: 10px;
         margin: 0 auto;
         margin-bottom: 20px;
