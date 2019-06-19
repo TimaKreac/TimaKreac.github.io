@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.partners-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-left" fill="#c3c3c3"  width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
         nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-block" id="arrow-right" fill="#c3c3c3"  transform="rotate(180)" width="32" height="84" viewBox="0 0 32 84"><g><g><path d="M30 0h2L2 42l30 42h-2L0 42z"/></g></g></svg>`,
