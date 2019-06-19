@@ -72,8 +72,8 @@ html {
 }
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .no-gutters>.col,
@@ -1680,22 +1680,23 @@ html {
   .position-lg-static {
     position: static !important;
   }
-  
+
   .position-lg-relative {
     position: relative !important;
   }
-  
+
   .position-lg-absolute {
     position: absolute !important;
   }
-  
+
   .position-lg-fixed {
     position: fixed !important;
   }
-  
+
   .position-lg-sticky {
     position: sticky !important;
   }
+
   .d-lg-none {
     display: none !important;
   }
@@ -1739,22 +1740,23 @@ html {
   .position-xl-static {
     position: static !important;
   }
-  
+
   .position-xl-relative {
     position: relative !important;
   }
-  
+
   .position-xl-absolute {
     position: absolute !important;
   }
-  
+
   .position-xl-fixed {
     position: fixed !important;
   }
-  
+
   .position-xl-sticky {
     position: sticky !important;
   }
+
   .d-xl-none {
     display: none !important;
   }
