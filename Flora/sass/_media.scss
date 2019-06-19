@@ -600,8 +600,13 @@
 
 
 
-    .card-contacts {
-        position: relative;
+
+    .card-contacts_btn {
+        padding: 10px;
+    }
+
+    .card-contacts_phone {
+        font-size: 24px;
     }
 
     .formSale_title {
@@ -615,11 +620,12 @@
     }
 
     .formSale_input {
-        padding: 20px;
+        padding: 10px 0 10px 10px;
+        font-size: 16px;
     }
 
     .formSale_btn {
-        padding: 20px 35px;
+        padding: 10px;
     }
 
     .modal-back {
@@ -664,6 +670,20 @@
     .modal-call,
     .modal-write {
         max-width: 500px
+    }
+
+    .modal-thanks {
+        max-width: 90%;
+    }
+
+    .modal-thanks_success {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .modal-thanks_text {
+        font-size: 24px;
+        text-align: center;
     }
 
     .modal-call input,
