@@ -318,14 +318,15 @@
 
 @media (min-width: 0px) and (max-width: 575px) {
     .header-nav_logo__text {
-        font-size: 24px;
+        font-size: 22px;
         margin: 0 auto;
+        padding-left: 45px;
     }
 
     .header-nav_logo__text:before {
-        width: 30px;
-        left: 25px;
-        top: -10px;
+        width: 25px;
+        left: 15px;
+        top: -12px;
         justify-content: center;
     }
 
@@ -625,6 +626,8 @@
         position: relative;
         right: 20px;
     }
+
+
 }
 
 
