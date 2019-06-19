@@ -597,10 +597,7 @@
         padding: 15px;
     }
 
-    .card-info {
-        position: relative;
-        right: 35px;
-    }
+
 
     .card-contacts {
         position: relative;
@@ -631,4 +628,81 @@
 }
 
 
-// sm
+@media (min-width:1300px) {
+    #arrow-right4 {
+        position: absolute;
+        right: 100px;
+        top: 45%;
+    }
+
+    #arrow-left4 {
+        position: absolute;
+        top: 45%;
+        left: 100px;
+    }
+}
+
+@media (min-width:1400px) {
+    #arrow-right4 {
+        position: absolute;
+        right: 16%;
+        top: 45%;
+    }
+
+    #arrow-left4 {
+        position: absolute;
+        top: 45%;
+        left: 16%;
+    }
+}
+
+@media (max-width:670px) {
+
+    .modal-call,
+    .modal-write {
+        max-width: 500px
+    }
+
+    .modal-call input,
+    .modal-write input {
+        max-width: 100%;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:520px) {
+
+    .modal-call,
+    .modal-write {
+        max-width: 300px
+    }
+
+    .modal-call_title,
+    .modal-write_title {
+        font-size: 24px;
+        white-space: nowrap
+    }
+
+    .modal-call_subtitle,
+    .modal-write_subtitle {
+        font-size: 18px;
+    }
+
+    .modal-call input,
+    .modal-write input {
+        max-width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .modal-call button,
+    .modal-write button {
+        white-space: nowrap;
+        max-width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
