@@ -1,0 +1,1079 @@
+@import 'bourbon/bourbon' 
+@import 'smart-grid'
+$main-color: #f39f18
+.grids
+    z-index: 3
+    +debug(rgba(red,0.5),1px solid rgba(#fff,0.1))
+
+
+/************************* valuation *************************/
+
+.valuation
+    position: relative
+    z-index: 1
+    background-color: #f9f9f9
+    padding-top: 94px
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_1.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-inner
+        +row-flex()
+    &-title
+        +col()
+        +size(12)
+        margin: 0 auto 29px auto
+    &-text
+        display: block
+        +shift(1)
+        text-align: center
+        font-size: 15px
+        +col()
+        +size(10)
+        +size-sm(12)
+        +shift-left(1)
+        +shift-sm-left(0)
+        line-height: 22px
+        a
+            color: $main-color
+            font-family: 'RalewayBold',sans-serif
+            border-bottom: 1px solid $main-color
+
+    &-content
+        padding-top: 70px
+        width: 100%
+        background-image: url(img/s1_gray_bg.png)
+        background-repeat: no-repeat
+        background-position: center 73px
+        position: relative
+        +md-block()
+            background-position: center center
+        &_items
+            z-index: 2
+            +row-flex()
+            justify-content: space-between
+            position: relative
+            +sm-block()
+                justify-content: center
+                margin: 0 !important
+                &:nth-child(3)
+                    transform: translateY(120px)
+            +xs-block()
+                &:nth-child(3)
+                    transform: translateY(130px)
+            +to(435px)
+                &:nth-child(3)
+                        transform: translateY(160px)
+            &:nth-child(1)
+                & > .valuation-content_item:nth-child(1),& > .valuation-content_item:nth-child(3)
+                    transform: translateY(56px)
+            &:nth-child(1),&:nth-child(2)
+                margin-bottom: 153px
+            &:nth-child(3)
+                & > .valuation-content_item:nth-child(2)
+                    transform: translateY(60px)
+                & > .valuation-content_item > .valuation-content_item__text
+                    color: #fff
+            &:nth-child(3)
+                & > .valuation-content_item:after
+                    background-color: rgba(#fff,0.3)
+
+        &_item
+            +col()
+            +size(3)
+            +size-sm(10)
+            +size-sm(12)
+            padding-bottom: 22px
+            position: relative
+            text-align: center
+            +sm-block()
+                padding-bottom: 30px
+                transform: translate(0) !important
+                margin-bottom: 80px !important
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 1px
+                background-color: rgba(#000,0.3)
+            &__title
+                text-transform: none
+                display: inline-block
+                text-decoration: underline
+                line-height: 28px
+                font-size: 22px
+                color: $main-color
+            &__text 
+                margin-top: 20px
+                font-size: 15px
+                color: #111
+                line-height: 18px
+        &_triangle
+            height: 217px
+            width: 100%
+            position: absolute
+            bottom: 90px
+            left: 0
+            background-image: url(img/icons/s1_triangle.svg)
+            background-position: center
+            background-repeat: no-repeat
+            +sm-block()
+                height: 217px
+                bottom: 360px
+            +xs-block()
+                bottom: 370px
+            +to(435px)
+                bottom: 460px
+            &Logo
+                width: 118px
+                position: absolute
+                top: 33px
+                left: 50%
+                transform: translateX(-55%)
+            &Scales
+                z-index: -1
+                width: 160px
+                position: absolute
+                top: -127px
+                left: 50%
+                transform: translateX(-50%)
+                +md-block()
+                    display: none
+            &:after
+                content: ''
+                height: 220px
+                width: 100%
+                background-color: #394b5f
+                position: absolute
+                bottom: -218px
+                +sm-block()
+                    bottom: -488px
+                    height: 490px
+                +xs-block()
+                    bottom: -498px
+                    height: 500px
+                +to(435px)
+                    bottom: -588px
+                    height: 590px
+
+                    
+    &-footer
+        padding: 65px 0
+        background-color: #2c3949
+        width: 100%
+        margin-top: 128px
+        &_btn
+            display: block
+            font-size: 20px
+            line-height: 47px
+            color: #111111
+            margin: 0 auto
+            font-family: 'PFCentroSlabProBold',sans-serif
+            background-color: #f39f18
+            width: 235px
+            height: 47px
+            text-align: center
+            border-bottom: 3px solid #b97200
+            &:hover
+                background-color: lighten(#f39f18,5%)
+            &:active,&:focus
+                background-color: #b97200
+
+/************************* services *************************/
+
+.services
+    position: relative
+    background-color: #f9f9f9
+    padding-top: 94px
+    z-index: 1
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_1.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-head
+        +row-flex()
+    &-title
+        text-align: center
+        +col()
+        +size(12)
+    &-text
+        margin-top: 30px
+        margin-bottom: 66px
+        +col()
+        +size(10)
+        +size-sm(12)
+        +shift-left(1)
+        +shift-sm-left(0)
+        text-align: center
+        font-size: 15px
+        line-height: 22px
+        color: #333333
+    &-subtitle
+        text-align: center
+        +col()
+        +size(12)
+        margin-bottom: 80px
+        a
+            color: $main-color
+            border-bottom: 2px solid $main-color
+    &-items
+        +row-flex()
+        justify-content: center
+        flex-wrap: wrap
+        padding-bottom: 30px
+    &-item
+        +col()
+        +size(2)
+        +size-md(3)
+        +size-sm(6)
+        margin-bottom: 70px
+        &_img
+            width: 70px
+            height: 70px
+            display: block
+            margin: 0 auto
+        &_text
+            margin-top: 35px
+            padding-top: 18px
+            font-size: 13px
+            color: #111111
+            font-family: 'RalewayBold',sans-serif
+            line-height: 16px
+            position: relative
+            text-decoration: underline
+            text-align: center
+            &:before
+                content: ''
+                display: block
+                width: 60px
+                height: 1px
+                position: absolute
+                left: 50%
+                top: 0
+                transform: translateX(-50%)
+                background-color: #f39f18
+    &-footer
+        padding: 58px 0 63px 0
+        background-color: #e5e5e5
+        &_btn
+            display: block
+            font-size: 20px
+            color: #111
+            font-family: 'PFCentroSlabProBold',sans-serif
+            width: 300px
+            height: 47px
+            line-height: 47px
+            background-color: $main-color
+            border-bottom: 3px solid #b97200
+            margin: 0 auto
+            text-align: center
+            &:hover
+                background-color: lighten(#f39f18,5%)
+            &:active,&:focus
+                background-color: #b97200
+
+/************************* accounts *************************/
+
+.accounts
+    background-color: #2c3949
+    padding-top: 94px
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_2.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-head
+        +row-flex()
+    &-title
+        +col()
+        +size(12)
+        margin: 0 auto
+        color: #f9f9f9
+        font-size: 30px
+    &-text
+        +col()
+        +size(10)
+        +size-sm(12)
+        +shift-left(1)
+        +shift-sm-left(0)
+        margin: 0 auto
+        color: #e5e5e5
+        line-height: 22px
+        margin-top: 30px
+        text-align: center
+        font-size: 15px
+        margin-bottom: 27px
+    &-items
+        min-height: 850px
+        background-image: url(img/s3_sun_bg.png)
+        +sm-block()
+            background: none
+        background-repeat: no-repeat
+        background-position: center
+        +row-flex()
+        justify-content: center
+        align-items: stretch
+        margin-bottom: 63px
+        position: relative
+        text-align: center
+        &_book
+            +sm-block()
+                display: none
+            width: 131px
+            height: 131px
+            display: block
+            background-color: $main-color
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            border-radius: 50%
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                top: 50%    
+                left: 50%
+                transform: translate(-50%,-50%)
+                background-image: url(img/icons/section_3/folder.png)
+                background-repeat: no-repeat
+                background-size: contain
+                width: 73px
+                height: 73px
+
+    &-item
+        +col()
+        +size(3.4)
+        +size-sm(8)
+        +size-xs(12)
+        padding-left: 47px
+        +sm-block()
+            padding-left: 0
+            margin: 40px 0 !important
+
+        &:nth-child(1)
+            margin-top: 140px
+            +md-block()
+                padding-left: 0
+        &:nth-child(2)
+            margin-top: 54px
+        &:nth-child(3)
+            margin-top: 140px
+        &:nth-child(4)
+            +shift-right(5.2)
+            margin-top: 50px
+            +md-block()
+                padding-left: 0
+        &:nth-child(5)
+            margin-top: 50px
+            
+        &:nth-child(6)
+            margin-top: 50px
+            +md-block()
+                padding-left: 0
+                margin-right: 50px
+        &:nth-child(7)
+            margin-top: 160px
+            +md-block()
+                padding-left: 0
+                margin-bottom: 10px
+        &:nth-child(8)
+            margin-top: 50px
+            +md-block()
+                padding-left: 0
+        &_title
+            display: inline-block
+            color: #f39f18
+            font-size: 22px
+            line-height: 24px
+            text-decoration: underline
+            text-transform: none
+        &_text
+            margin-top: 22px
+            color: #f9f9f9
+            font-size: 14px
+            line-height: 18px
+
+    &-footer
+        background-color: #394b5f
+        padding: 65px 0 63px 0
+        text-align: center
+        &_btn
+            text-align: center
+            font-size: 20px
+            color: #111111
+            display: block
+            margin: 0 auto
+            font-family: 'PFCentroSlabProBold',sans-serif
+            max-width: 369px
+            height: 47px
+            line-height: 47px
+            background-color: $main-color
+            border-bottom: 3px solid #b97200
+            &:hover
+                background-color: lighten(#f39f18,5%)
+            &:active,&:focus
+                background-color: #b97200
+            +xs-block()
+                line-height: 22px
+                display: inline-block
+                padding: 12px 24px
+                height: auto
+                width: auto
+                max-width: 90%
+
+/************************* features *************************/
+
+.features
+    background-color: #e5e5e5
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_3.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-head
+        padding-top: 94px
+        +row-flex()
+    &-title
+        +col()
+        +size(12)
+    &-text
+        +col()
+        +size(10)
+        +size-sm(12)
+        +shift-left(1)
+        +shift-sm-left(0)
+        color: #333333
+        font-size: 15px
+        line-height: 22px
+        margin-top: 30px
+        margin-bottom: 67px
+        text-align: center
+    &-subtitle
+        +col()
+        +size(12)
+        margin-bottom: 57px
+        color: #394b5f
+        font-size: 24px
+        text-align: center
+    &-items
+        +row-flex()
+        justify-content: center
+        +md-block()
+            justify-content: space-around
+        +sm-block()
+            justify-content: center
+        perspective: 1000px
+    &-item
+        +col()
+        +size(3)
+        +size-lg(3.5)
+        +size-md(4.5)
+        +size-sm(6)
+        +size-xs(12)
+        +shift-sm-left(0)
+        +shift-sm-right(0)
+        transition: all 0.5s ease
+        // transform: rotateY(110deg)
+        padding: 57px 32px 57px 32px
+        background-color: #2c3949
+        text-align: center
+        margin-bottom: 72px
+        &:nth-child(1)
+            +shift-md-left(1)
+            +shift-sm-left(0)
+        &:nth-child(2)
+            +shift-md-right(1)
+            +shift-sm-right(0)
+        &_imgWrap
+            width: 120px
+            height: 120px
+            position: relative
+            display: block
+            text-align: center
+            margin: 0 auto
+            background-color: $main-color
+            border-radius: 50%
+            margin-bottom: 40px
+        &_text
+            font-size: 14px
+            color: #97a4b2
+            line-height: 18px
+            span
+                color: #f39f18
+                font-family: 'RalewayBold',sans-serif
+
+        &_img
+            width: 60%
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+        &_title
+            text-transform: uppercase
+            margin-bottom: 24px
+            font-family: 'RalewayBold',sans-serif
+            color: #e5e5e5
+            font-size: 16px
+
+                
+    &-footer
+        background-color: #d6d6d6
+        padding: 66px 0 63px 0
+        text-align: center
+        &_btn
+            display: block
+            font-size: 20px
+            line-height: 47px
+            color: #111111
+            margin: 0 auto
+            font-family: 'PFCentroSlabProBold',sans-serif
+            background-color: #f39f18
+            width: 255px
+            height: 47px
+            text-align: center
+            border-bottom: 3px solid #b97200
+            &:hover
+                background-color: lighten(#f39f18,5%)
+            &:active,&:focus
+                background-color: #b97200
+                
+/************************* work *************************/
+.work
+    padding-top: 94px
+    background-color: #2c3949
+    position: relative
+    z-index: 1
+    text-align: center
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_2.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-title
+        color: #f9f9f9
+        font-size: 30px
+        margin-bottom: 73px
+        text-align: center
+    &-items
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 76px
+        +lg-block()
+            display: inline-block
+    &-item
+        position: relative
+        transition: all 0.4s ease-in-out
+        &:hover
+            z-index: 3
+            transform: scale(1.12)
+            path
+                fill-opacity: 0 !important
+                stroke-opacity: 1 !important
+        &:nth-child(1)
+            & > .work-item_text:before
+                background-image: url(img/icons/section_5/1.svg)
+                left: -60px
+                width: 40px
+                height: 48px
+        &:nth-child(2)
+            & > .work-item_text:before
+                background-image: url(img/icons/section_5/2.svg)
+                width: 30px
+                height: 44px
+        &:nth-child(3)
+            & > .work-item_text:before
+                background-image: url(img/icons/section_5/3.svg)
+                width: 31px
+                height: 43px
+        &:nth-child(4)
+            & > .work-item_text:before
+                background-image: url(img/icons/section_5/4.svg)
+                width: 35px
+                height: 45px
+              
+
+        &:not(:first-child)
+            margin-left: -40px
+            +lg-block()
+                margin-left: 0
+                margin-top: 40px
+        &_text
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-30%,-50%)
+            color: #f9f9f9
+            font-size: 18px
+            line-height: 22px
+            font-family: 'PFCentroSlabProMedium',sans-serif
+            text-align: left
+            span
+                font-size: 22px
+                font-family: 'PFCentroSlabProBold',sans-serif
+                color: #fff
+            &:before
+                content: ''
+                display: block
+                background-repeat: no-repeat
+                background-size: contain
+                top: 50%
+                transform: translateY(-50%)
+                left: -45px
+                position: absolute
+        &_img
+            position: absolute
+            display: block
+            width: 48px
+            height: 48px
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+         
+    &-footer
+        background-color: #394b5f
+        padding: 66px 0 63px 0
+        &_btn
+            background-color: $main-color
+            text-align: center
+            margin: 0 auto
+            display: block
+            width: 247px
+            height: 47px
+            line-height: 47px
+            border-bottom: 3px solid #b97200
+            color: #111111
+            font-size: 20px
+            font-family: 'PFCentroSlabProBold',sans-serif
+            &:hover
+                background-color: lighten(#f39f18,5%)
+            &:active,&:focus
+                background-color: #b97200
+
+/************************* team *************************/
+
+.team 
+    padding-top: 94px
+    position: relative
+    z-index: 1
+    text-align: center
+    background-color: #f9f9f9
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_1.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-head
+    &-title
+    &-text
+        color: #333333
+        line-height: 22px
+        font-size: 15px
+        margin-top: 30px
+        margin-bottom: 70px
+        text-align: center
+    &-items
+        +row-flex()
+        justify-content: center
+    &-item
+        margin-bottom: 86px
+        padding: 57px 30px 52px 30px 
+        text-align: center
+        background-color: #e5e5e5
+        +col()
+        +size(3)
+        +size-lg(3.5)
+        +size-md(4)
+        +size-sm(6)
+        +size-xs(12)
+        +shift-sm(1)
+        +shift-xs(0)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &_img
+            width: 120px
+            height: 120px
+            border-radius: 50%
+            border: 5px solid #d6d6d6
+            margin: 0 auto
+        &_name
+            margin-top: 40px
+            font-family: 'RalewayBold',sans-serif
+            color: #333333
+            font-size: 16px
+            margin-bottom: 8px
+            text-transform: none
+        &_post
+            font-size: 13px
+            color: #6e7b8b
+            text-transform: none
+            line-height: 18px
+        &_phone
+            font-family: 'RobotoBold',sans-serif
+            font-size: 16px
+            color: #333333
+            margin-top: 24px
+
+/************************* feedback *************************/
+.feedback
+    padding-top: 94px
+    background-color: #e5e5e5
+    position: relative
+    z-index: 1
+    text-align: center
+    padding-bottom: 135px
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_3.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-text
+        color: #333333
+        font-size: 15px
+        line-height: 22px
+        margin-bottom: 64px
+        margin-top: 30px
+    &-items
+        position: relative
+    &-item
+        +row-flex()
+        flex-direction: column
+        text-align: center
+        &_name
+            font-family: 'RalewayBold',sans-serif
+            color: #333333
+            font-size: 16px
+            text-transform: none
+            margin-top: 30px
+            margin-bottom: 10px
+        &_post
+            font-size: 13px
+            color: #6e7b8b
+            text-transform: none
+        &_img
+            width: 132px
+            height: 132px
+            border-radius: 50%
+            border: 7px solid $main-color
+            margin: 0 auto
+        &_text
+            +size(10)
+            +size-sm(12)
+            text-align: center
+            margin: 0 auto
+            color: #333333
+            font-size: 14px
+            line-height: 20px
+            margin-top: 22px
+.feedback-prevArrow
+    background-image: url(img/slider_arrows.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 16px
+    width: 32px
+    height: 29px
+    position: absolute
+    left: 0
+    top: 60px
+    cursor: pointer
+    z-index: 2
+        
+.feedback-nextArrow
+    position: absolute
+    right: 0
+    top: 60px
+    background-image: url(img/slider_arrows.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: -16px
+    width: 32px
+    height: 29px
+    cursor: pointer
+    z-index: 2
+
+.feedback-dots
+    display: flex
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    li
+        margin-top: 30px
+        &.slick-active > button
+            background-color: $main-color
+        button
+            margin-left: 5px
+            margin-right: 5px
+            display: block
+            width: 14px
+            height: 14px
+            border-radius: 50%
+            background-color: #b1b1b1
+            font-size: 0
+            border: 0
+            transition: all 0.5s ease
+            cursor: pointer
+            &:hover
+                background-color: $main-color
+
+/************************* professional *************************/
+
+.professional
+    padding-top: 94px
+    padding-bottom: 96px
+    position: relative
+    z-index: 1
+    text-align: center
+    background-color: #f9f9f9
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_1.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    &-inner
+        +row-flex()
+    &-wrapper
+        +col()
+        +size(8)
+        +size-md(12)
+    &-head
+        +row-flex()
+    &-title
+        +col()
+        +size(12)
+        text-align: left
+        &:after
+            left: 0
+            transform: translateX(0)
+    &-text
+        +col()
+        +size(12)
+        text-align: left
+        font-size: 15px
+        color: #333333
+        line-height: 22px
+        margin-top: 30px
+        margin-bottom: 50px
+    &-items
+        +row-flex()
+    &-item
+        +col()
+        +size(3)
+        +size-sm(6)
+        +sm-block()
+            margin-top: 40px
+        &_img
+            width: 72px
+            height: 72px
+            margin-bottom: 30px
+        &_text
+            font-family: 'RalewayBold'
+            font-size: 13px
+            color: #333333
+            line-height: 16px
+    &-form
+        +col()
+        +size(4)
+        +size-md(8)
+        +size-sm(12)
+        +md-block()
+            margin: 60px auto 0 auto
+        background-color: #d6d6d6
+        opacity: 0.8
+        padding: 36px 34px 40px 30px
+        border-bottom: 4px solid rgba(0, 0, 0, 0.6)
+        &_title
+            color: #2c3949
+            font-size: 28px
+            font-family: 'PFCentroSlabProMedium',sans-serif
+            text-align: left
+            margin-bottom: 16px
+            text-transform: none
+        &_text
+            color: #5e6267
+            font-size: 13px
+            line-height: 18px
+            letter-spacing: 0.52px
+            text-align: left
+            margin-bottom: 30px
+        &_label
+            margin-bottom: 24px
+            span
+                display: block
+                margin-bottom: 4px
+                color: #778390
+                font-size: 13px
+                letter-spacing: 1.3px
+                text-align: left
+        &_input
+            width: 100%
+            color: #ffffff
+            height: 47px
+            background-color: #c0c0c0
+            box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.4)
+            border: 0
+            margin-bottom: 24px
+            padding-left: 10px
+            font-size: 20px
+            transition: all .5s ease
+            font-family: 'PFCentroSlabProMedium',sans-serif
+            &:focus,&:active
+                box-shadow: inset 0 5px 0 rgba(0, 0, 0, 0.5)
+            &:hover,&:focus
+                background-color: lighten(#34465a,10%)
+        &_btn
+            border: 0
+            display: block
+            margin: 8px auto 0 auto
+            width: 176px
+            height: 47px
+            line-height: 47px
+            background-color: $main-color
+            text-align: center
+            color: #111111
+            font-size: 20px
+            font-family: 'PFCentroSlabProBold',sans-serif
+            border-bottom: 3px solid #b97200
+            cursor: pointer
+            transition: all .5s ease
+            &:hover
+                background-color: lighten(#f39f18,5%)
+            &:active,&:focus
+                background-color: #b97200
+            
+/************************* footer *************************/
+
+.footer
+    background-color: #2c3949
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        height: 6px
+        width: 100%
+        display: block
+        background-image: url(img/bah_2.png)
+        background-repeat: repeat-x 
+        position: absolute
+        top: -5px
+    .container
+    &-up
+        background-color: #1f2b3a
+        height: 38px
+        width: 100%
+        text-align: center
+        & a
+            line-height: 38px
+
+    &-inner
+        display: flex
+        align-items: center
+        padding: 75px 0 60px 0
+        position: relative
+        +md-block()
+            flex-direction: column
+            justify-content: center
+       
+
+    &-logo
+        opacity: 0.95
+        &_img
+            min-width: 100%
+            max-width: none
+            width: 100px
+            height: 47px
+            vertical-align: middle
+            +xs-block()
+                width: 80px
+    &-nav
+        margin-right: 95px
+        margin-left: auto
+        display: block
+        +to(1080px)
+            margin-right: 40px
+        +md-block()
+            width: 100%
+            margin: 0 auto
+            margin-top: 30px
+       
+    &-menu
+        display: flex
+        +md-block()
+            display: block
+        li
+            +md-block()
+                display: block
+        &_link
+            margin-right: 20px
+            font-size: 14px
+            color: #fff
+            position: relative
+            padding-bottom: 2px
+            +md-block()
+                display: block
+                padding: 15px 0 15px 20px
+                font-size: 18px
+                width: 100% 
+            &:hover
+                color: $main-color
+                border-bottom: 1px solid $main-color
+             
+            &.active
+                color: $main-color
+                border-bottom: 1px solid $main-color
+    &-phone
+        color: #fff
+        font-size: 20px
+        font-family: 'RobotoBold',sans-serif
+        opacity: 0.9
+        +md-block()
+            text-align: center
+            margin: 0 auto
+            margin-top: 50px
+        +xs-block()
+            font-size: 16px
+        &:hover
+            opacity: 1
+            color: $main-color
