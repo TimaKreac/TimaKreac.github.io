@@ -1,0 +1,43 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+// @mixin font($f-name, $f-style, $f-weight, $f-url)
+// 	@font-face
+// 		font-family: $f-name
+// 		font-style: $f-style
+// 		font-weight: $f-weight
+// 		src: url($f-url) format('woff2')
+
+
+// @include font('Panton', normal, 400, '../fonts/Panton-Regular.woff2')
+// @include font('Panton', Bold, 700, '../fonts/Panton-Bold.woff2')
+// @include font('Panton', Semibold, 600, '../fonts/Panton-SemiBold.woff2')
+
+@font-face 
+font-family: 'Panton-Bold'
+src: url("../fonts/Panton-Bold.eot")
+src: url("../fonts/Panton-Bold.woff2") format("woff2"), url("../fonts/Panton-Bold.woff") format("woff"), url("../fonts/Panton-Bold.ttf") format("truetype"), url("../fonts/Panton-Bold.eot?#iefix") format("embedded-opentype");
+font-weight: normal
+font-style: normal
+
+@font-face 
+font-family: 'Panton-normal'
+src: url("../fonts/Panton-Regular.eot")
+src: url("../fonts/Panton-Regular.woff2") format("woff2"), url("../fonts/Panton-Regular.woff") format("woff"), url("../fonts/Panton-Regular.ttf") format("truetype"), url("../fonts/Panton-Regular.eot?#iefix") format("embedded-opentype");
+font-weight: normal
+font-style: normal
+
+@font-face 
+font-family: 'Panton-SemiBold'
+src: url("../fonts/Panton-SemiBold.eot")
+src: url("../fonts/Panton-SemiBold.woff2") format("woff2"), url("../fonts/Panton-SemiBold.woff") format("woff"), url("../fonts/Panton-SemiBold.ttf") format("truetype"), url("../fonts/Panton-SemiBold.eot?#iefix") format("embedded-opentype");
+font-weight: normal
+font-style: normal
