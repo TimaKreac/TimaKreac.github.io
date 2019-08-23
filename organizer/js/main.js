@@ -100,6 +100,8 @@ const handleSubmitToDo = e => {
   const toDoInputValue = toDoInput.value;
   if (toDoInputValue !== "" && toDoInputValue.indexOf(" ") > 0) {
     setToDo(toDoInputValue);
+  } else {
+    alert("Строка не должна быть пустой и иметь хотя бы один пробел!");
   }
   toDoInput.value = "";
 };
@@ -120,7 +122,7 @@ const IMAGES = 4;
 
 const setImage = imgNum => {
   const image = new Image();
-  image.src = `/../img/${imgNum}.jpg`;
+  image.src = `./img/${imgNum}.jpg`;
   image.style.cssText =
     "position: absolute;top:0;left:0;width:100%;height:100vh;z-index:-2;animation: fadeIn 0.5s ease";
   body.appendChild(image);
