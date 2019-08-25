@@ -1,6 +1,6 @@
 const getData = () => {
   const goodsWrapper = document.querySelector(".goods");
-  return fetch("db/db.json")
+  return fetch("db.json")
     .then(response => {
       if (response.ok) {
         return response.json();
@@ -14,7 +14,7 @@ const getData = () => {
     .catch(err => {
       console.warn(err);
       goodsWrapper.innerHTML =
-        '<div style="font-size: 40px;">Упс..Что-то пошло не так!</div>';
+        '<div style="font-size: 40px;">Упс..Что-то пошло не так!Данные с сервера не были получены</div>';
     });
 };
 

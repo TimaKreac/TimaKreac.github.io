@@ -10,6 +10,7 @@ import FilterGoods from "./modules/FilterGoods";
 
 (async function() {
   const db = await getData();
+  console.log(db);
   renderCards(db);
   renderCategory();
   toggleCheckbox();
