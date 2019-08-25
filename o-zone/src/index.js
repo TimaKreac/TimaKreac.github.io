@@ -8,21 +8,21 @@ import toggleCart from "./modules/toggleCart";
 import toggleCards from "./modules/toggleCards";
 import FilterGoods from "./modules/FilterGoods";
 
-getData().then(datas => {
-  renderCards(data);
-  renderCategory();
-  toggleCheckbox();
-  toggleCart();
-  toggleCards();
-  FilterGoods();
-});
-
-// (async function() {
-//   const db = await getData();
-//   renderCards(db);
+// getData().then(data => {
+//   renderCards(data);
 //   renderCategory();
 //   toggleCheckbox();
 //   toggleCart();
 //   toggleCards();
 //   FilterGoods();
-// })();
+// });
+
+(async function() {
+  const db = await getData();
+  renderCards(db);
+  renderCategory();
+  toggleCheckbox();
+  toggleCart();
+  toggleCards();
+  FilterGoods();
+})();
