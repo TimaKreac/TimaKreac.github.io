@@ -1,6 +1,6 @@
 const getData = () => {
   const goodsWrapper = document.querySelector(".goods");
-  return fetch("../db/db.json")
+  return fetch("db/db.json")
     .then(response => {
       if (response.ok) {
         return response.json();
