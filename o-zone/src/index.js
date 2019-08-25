@@ -8,7 +8,7 @@ import toggleCart from "./modules/toggleCart";
 import toggleCards from "./modules/toggleCards";
 import FilterGoods from "./modules/FilterGoods";
 
-getData().then(data => {
+getData().then(datas => {
   renderCards(data);
   renderCategory();
   toggleCheckbox();
