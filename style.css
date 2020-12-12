@@ -10,17 +10,22 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
 }
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
 a {
   text-decoration: none;
 }
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .projects-item {
-  width: 20vw;
-  height: 20vh;
-  background: rgb(9, 93, 219);
+  width: 32vw;
+  height: 25vh;
+  background: rgb(7, 156, 214);
   position: relative;
   transition: all 0.5s ease;
 }

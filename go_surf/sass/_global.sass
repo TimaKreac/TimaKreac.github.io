@@ -1,0 +1,125 @@
+html
+   box-sizing: border-box
+*,
+*::before,
+*::after
+   box-sizing: inherit
+body
+   margin: 0
+   padding: 0
+   background-color: #171919
+   font-size: 16px
+   color: #fff
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 400
+   text-transform: uppercase
+a
+   display: inline-block
+   color: #fff
+   text-decoration: none
+ul,li
+   list-style: none
+   margin: 0
+   padding: 0
+h1,h2,h3,h4,h5,h6,p
+   margin: 0
+.btn
+   font-weight: 800
+   font-size: 40px
+   span
+      display: inline-block
+      background-color: $green
+      padding: 18px 57px 15px 17px
+      position: relative
+      margin-left: 8px
+      &::before
+         content: ''
+         position: absolute
+         left: -11px
+         top: 50%
+         transform: translateY(-50%)
+         width: 20px
+         height: 1px
+         background-color: #fff
+      &::after
+         content: ''
+         position: absolute
+         background-image: url('../images/arrow-right.svg')
+         width: 25px
+         height: 21px
+         background-size: cover
+         right: 16px
+         top: 50%
+         transform: translateY(-50%)
+.container
+   max-width: 1920px
+   margin: 0 auto
+.subtitle
+   font-weight: 800
+   font-size: 40px
+   margin-top: 8px
+   img
+      display: inline-block
+      margin-left: 20px
+.suptitle
+   &-left
+      display: inline-block
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 7.33333px
+      opacity: .5
+      padding-left: 103px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         width: 80px
+         height: 1px
+         background-color: #fff
+         left: 0
+         top: 50%
+   &-right
+      display: inline-block
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 7.33333px
+      opacity: .5
+      padding-right: 103px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         width: 80px
+         height: 1px
+         background-color: #fff
+         right: 0
+         top: 50%
+.title
+   display: inline-block
+   margin-left: 245px
+   position: relative
+   position: relative
+   font-weight: 800
+   font-size: 80px
+   span
+      font-weight: 800
+      font-size: 200px
+      opacity: 0.02
+      position: absolute
+      bottom: -135px
+      left: -296px
+   &::before
+      content: ''
+      display: block
+      width: 80px
+      height: 1px
+      position: absolute
+      top: 0
+      right: 0
+      background-color: $green
+.thin
+   font-weight: 100
+.rating
+   display: inline-flex
+   img
+      margin-left: -15px

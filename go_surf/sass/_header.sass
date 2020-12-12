@@ -1,0 +1,160 @@
+.header
+   position: relative
+   height: 100vh
+   overflow: hidden
+.header__slider
+   &-item
+      height: 100vh
+      background-image: url(../images/header-bg.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      position: relative
+
+.slider-item__info
+   position: absolute
+   text-align: right
+   right: 80px
+   bottom: 116px
+   &-title
+      font-weight: 800
+      font-size: 80px
+      line-height: 86px
+      margin-bottom: 40px
+   &-text
+      font-weight: 800
+      font-size: 40px
+      line-height: 48px
+      margin-bottom: 20px
+   &-subtitle
+      margin-bottom: 5px
+   &-subtext
+      margin-bottom: 12px
+
+.slider-arrow
+   position: absolute
+   cursor: pointer
+   z-index: 1  
+   top: 40px
+   right: 80px
+   &__left
+      right: 124px
+
+.slider-dots
+   position: absolute
+   right: 50px
+   bottom: 30px
+   max-width: 920px
+   width: 100%
+   text-transform: capitalize
+   .slick-current
+      .dots-box
+         border-top: 4px solid $green
+
+.dots-box
+   width: 200px
+   display: flex
+   justify-content: space-between
+   align-items: center
+   height: 28px
+   border-top: 4px solid #fff
+   padding-top: 12px
+   &__number
+      font-weight: 800
+      font-size: 24px
+      line-height: 34px
+   &__name
+      font-weight: 300
+      line-height: 19px
+
+.header__title
+   z-index: 1
+   position: absolute
+   font-weight: 800
+   opacity: 0.07
+   font-size: 200px
+   line-height: 156px
+.header__map
+   position: absolute
+   right: 0
+   top: 0
+   z-index: 1
+.header__arrow-down
+   position: absolute
+   z-index: 1
+   left: 210px
+   bottom: 30px
+
+.header__aside
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   height: 100vh
+   z-index: 2
+   position: absolute
+   border-right: 1px solid rgba(#fff,0.25)
+   text-align: center
+   
+   &-date
+      margin-top: 10px
+      margin-bottom: 20px
+      font-weight: 800
+      font-size: 72px
+      line-height: 64px
+      span
+         display: block
+         font-weight: 300
+         font-size: 16px
+         line-height: 19px
+         letter-spacing: 1.4px
+   &-location
+      text-transform: capitalize
+      display: inline-flex
+      position: relative
+      padding-left: 19px
+      font-weight: 300
+      font-size: 12px
+      line-height: 14px
+      letter-spacing: 1.05px
+      margin: 0 auto 20px
+      &::before
+         content: ''
+         position: absolute
+         width: 11px
+         height: 13px
+         left: 0
+         top: 0
+         background-image: url(../images/marker.svg)
+
+
+.menu
+   &__list
+      margin-top: 30px
+      li
+         text-transform: capitalize
+         margin-bottom: 24px
+         img, span
+            transition: 0.5s
+         &:blur
+            transform: translateY(-30px)
+         &:hover
+            img
+               transform: translateY(-2px)
+            span
+               transform: translateY(2px)
+      span
+         display: block
+         margin-top: 4px
+         font-weight: 500
+         font-size: 12px
+         line-height: 14px
+         letter-spacing: 3px
+
+.line-animation
+   stroke-dasharray: 600
+   stroke-dashoffset: 600
+   animation: lineDash 5s infinite 6s
+
+@keyframes lineDash
+   to
+      stroke-dashoffset: 0

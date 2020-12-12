@@ -1,0 +1,172 @@
+.surf
+   padding: 160px 0 120px
+   background-image: url(../images/surf-bg.svg)
+   background-position: right 219px
+   background-repeat: no-repeat
+   &__titles
+      margin-top: 60px
+      text-align: right
+      margin-right: 80px
+   &-slider
+      padding-top: 110px
+      .slick-current
+         .surf-box__inner
+            background: none
+            &-button
+               display: block
+      .slick-slide:nth-child(4n + 1)
+         .surf-box
+            margin-top: 32px
+      .slick-slide:nth-child(4n + 3)
+         .surf-box
+            margin-top: 89px
+      .slider-arrow
+         opacity: 0.25
+         top: 50px
+   &-box
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      &__inner
+         min-height: 750px
+         background: rgba(#1C2121,.85)
+         padding: 72px 0 0 40px
+         position: relative
+         transition: 0.5s
+         &:hover
+            background: none
+            .surf-box__inner-button
+               display: block
+         &-button
+            position: absolute
+            bottom: 0
+            left: 40px
+            display: none
+         &-title
+            font-weight: 800
+            font-size: 40px
+            width: 140px
+            line-height: 36px
+         &-location
+            width: 0
+            height: 0
+            white-space: nowrap
+            position: absolute
+            font-size: 18px
+            transform: rotate(-90deg)
+            letter-spacing: 8px
+            bottom: 85px
+            left: 40px
+      
+.surf-map
+   width: 100% 
+   min-height: 635px
+   background-image: url(../images/world-map-dots.png)
+   background-repeat: no-repeat
+   background-size: 1200px
+   background-position: center
+   margin: 0 auto
+   position: relative
+   .slick-current
+      .surf-map__circle::before
+         display: block
+      .surf-map__content
+         display: block
+   .slick-slide
+      outline: 0
+   .slick-list
+      height: 635px
+   &__circle
+      width: 24px
+      height: 24px
+      background-color: $green
+      border-radius: 50%
+      position: relative
+      box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777)
+      cursor: pointer
+      &::before
+         content: ''
+         display: none
+         height: 0
+         width: 0
+         border-bottom: 20px solid $green
+         border-left: 12px solid transparent
+         border-right: 12px solid transparent
+         border-bottom-left-radius: 4px
+         border-bottom-right-radius: 4px
+         position: absolute
+         bottom: 16px
+         left: 50%
+         transform: translateX(-50%)
+      &--1
+         top: 335px
+         left: 280px
+      &--2
+         top: 290px
+         left: 220px
+      &--3
+         left: 180px
+         top: 320px
+      &--4
+         left: 30px
+         top: 500px
+      &--5
+         top: 210px
+         left: -50px
+      &--6
+         top: 550px
+         left: -190px
+      &--7
+         top: 390px
+         left: -240px
+      &--8
+         left: -190px
+         top: 480px
+   &__content
+      display: none
+      z-index: 1
+      width: 285px
+      padding: 28px 31px 31px 32px
+      background-color: rgba(#0F1010,0.7)
+      border-radius: 6px
+      position: absolute
+      bottom: 40px
+      right: 50%
+      transform: translateX(50%) 
+      &-head
+         display: flex
+         margin-bottom: 30px
+         justify-content: space-between
+      &-link
+         margin-top: 6px
+      &-title
+         font-weight: 800
+         font-size: 18px
+         padding-bottom: 10px
+         position: relative
+         margin-bottom: 8px
+         &::after
+            content: ''
+            position: absolute
+            width: 80px
+            height: 1px
+            background-color: $green
+            bottom: 0
+            left: 0
+      &-subtitle
+         text-transform: capitalize
+      &-body
+         display: flex
+         justify-content: space-between
+         &__item
+            text-align: center
+            img
+               display: inline-block
+               margin-bottom: 5px
+            &-text
+               margin-top: 1px
+               font-size: 10px
+               font-weight: 300
+            &-number
+               font-weight: 800
+               line-height: 23px
